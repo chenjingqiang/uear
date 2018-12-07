@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/rem.js"></script>
+    <style>
+        html,body,#box{
+            height: 100%;
+            min-width: 1500px;
+        }
+        #box header{
+            position: fixed;
+            width: 100%;
+            height: 80px;
+            background-color:rgba(0,0,0,0.3);
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        #box .down{
+            width: 40px;
+            position: fixed;
+            left: 50%;
+            margin-left: -13px;
+            bottom: 40px;
+            z-index: 1;
+        }
+        #box .down2{
+            width: 40px;
+            position: fixed;
+            left: 50%;
+            margin-left: -13px;
+            bottom: 40px;
+            display: none;            
+        }
+        #box .con1 {
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+        #box .con1 .bj{
+            width: 100%;
+            height: 100%;
+            min-width: 1200px;
+        }
+        #box .con1 .con1_1{
+            width: 100%;
+            height: 100%;
+        } 
+        
+        #box .con1 .pos{
+            width: 100%;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            text-align: center;
+        }
+        #box .con1 h1{
+            width: 100%;
+            font-size: 58px;
+            height: 90px;
+            line-height: 90px;
+        }
+        #box .con1 h2{
+            width: 100%;
+            font-size: 28px;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 60px;
+            left: 0;
+        }
+        #box .con1 .btn{
+            display: block;
+            margin: 0 auto;
+            width: 287px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 20px;
+            background: #5885EE;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        @keyframes bot_str
+        {
+            0% {height: 50px;}
+            100% {height: 150px;}
+        }
+        @keyframes bot_end
+        {
+            0% {height: 150px;}
+            100% {height: 50px;}
+        }
+        @keyframes bot_str2
+        {
+            0% {margin-left: 0px;}
+            100% {margin-left: -60px;}
+        }
+        @keyframes bot_end2
+        {
+            0% {margin-left: -60px;}
+            100% {margin-left: 0px;}
+        }
+        @keyframes bot_str3
+        {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+        @keyframes bot_end3
+        {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        #box .con1 .QR_f{
+            width: 148px;
+            height: 50px;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: left;
+            margin-top: 50px;
+            text-align: center;
+            box-shadow: #ccc 0px 0px 1px 1px;
+            padding-top: 4px;
+            cursor: pointer;
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            margin-left: -74px;
+            z-index: 11;
+        }
+        #box .con1 .dong2{
+	        animation:bot_str 0.5s forwards ;
+        }
+        #box .con1 .dong3{
+	        animation:bot_end 0.5s forwards ;
+        }
+        #box .con1 .QR_f p{
+            line-height: 40px;
+            font-size: 16px;
+        }
+        #box .con1 .QR_f p i{
+            margin-left: 10px;
+            opacity: 0.8;
+        }
+        #box .con1 .QR_f .dong4{
+            animation:bot_str2 0.5s forwards ;
+        }
+        #box .con1 .QR_f .dong5{
+            animation:bot_str3 0.5s forwards ;
+        }
+        #box .con1 .QR_f .dong6{
+            animation:bot_end2 0.5s forwards ;
+        }
+        #box .con1 .QR_f .dong7{
+            animation:bot_end3 0.5s forwards ;
+        }
+        #box .con1 .QR_f .qr_small{
+            width: 40px;
+            height: 40px;
+        }
+        #box .con1 .QR{
+            width: 80px;
+            height: 80px;
+            margin-top: 15px;
+        }
+        #box .con1 .Mask{
+            width: 100%;
+            height: 40px;
+            background-color:rgba(0,0,0,0.3);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            z-index: 10;
+        }
+        #box .con1 .Mask .cen{
+            margin: 0 auto;
+            width: 1200px;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        #box .swiper-container4{
+            height: 40px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        #box .con1 .Mask .cen span{
+            width: 47px;
+            height: 18px;
+            background: #E76F00;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 4px;
+            margin-top:11px;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+        #box .con2{
+            width: 100%;
+            overflow: hidden;
+        }
+        #box .con2 h1{
+            font-size: 30px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            margin-top: 120px;
+            margin-bottom: 10px;
+            color: #132550;
+        }
+        #box .con2 h2{
+            width:36px;
+            height:1px;
+            border:3px solid #132550;
+            margin: 0 auto;
+            margin-bottom: 130px;
+        }
+        #box .con2 ul{
+            width: 100%; 
+        }
+        #box .con2 li{
+            width: 33.333333333%;
+            float: left;
+            position: relative;
+        }
+        #box .con2 div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: #fff;
+        }
+        #box .con2 div h1{
+            width: 100%;
+            font-size: 38px;
+            color: #fff;
+            text-align: center;
+            margin-top: 36%;
+            margin-bottom: 4%;
+        }
+        #box .con2 div p{
+            width: 40%;
+            font-size: 16px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 24px;
+            opacity: 0.8;
+        }
+        /* 旋转 */
+        @keyframes myfirst
+        {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+        /* 下滑 */
+        
+        #box .con2 li .b_i{
+            width: 100%;
+        }
+        #box .con2 li .dong{
+	        animation:myfirst 0.8s linear;
+        }
+        #box .con2 li .fly{ 
+            width: 51%;
+            height: 62%;
+            position: absolute;
+            top: 26%;
+            left: 25%;
+        }
+        #box .con3{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .world {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            cursor: move;
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+            cursor: grab;
+        }
+        .world-bg {
+            position: absolute;
+            width: 100%;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        .world-globe {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+        }
+        .world-globe-pole {
+            position: absolute;
+            width: 530px;
+            height: 530px;
+            left: -265px;
+            top: -265px;
+            border-radius: 50% 50%;
+        }
+        .world-globe-doms-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+        }
+        .world-globe-halo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 730px;
+            height: 715px;
+            margin-left: -368px;
+            margin-top: -350px;
+        }
+        #box .con3 .con3_1{
+            width: 1200px;
+            margin: 0 auto;
+            color: #8095C7;
+        }
+        #box .con3 .con3_1 h1{
+            margin-top: 15%;
+            margin-bottom: 3%;
+            font-size: 30px;
+            color: #132550;
+        }
+        #box .con3 .con3_1 p{
+            width: 236px;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        #box .con3 .yin{
+            display: block;
+            margin: 0 auto;
+            width: 530px;
+            margin-top: 21%;
+        }
+        .swiper-container,.swiper-container2,.swiper-container3{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-container2 .swiper-slide1{
+            background: url(img/bj.jpg) center no-repeat;
+            background-size: 100% 100%;
+        }
+        .swiper-container2 .swiper-slide2{
+            background: url(img/bj2.jpg) center no-repeat;
+            background-size: 100% 100%;
+        }
+        .swiper-container2 .swiper-slide3{
+            background: url(img/bj3.jpg) center no-repeat;
+            background-size: 100% 100%;
+        }
+        /* .swiper-container3 .swiper-wrapper{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        } */
+        .swiper-container3 .swiper-wrapper{
+            width: 100%;
+        }
+        .swiper-container3 .swiper-wrapper .swiper-slide{
+            width: 38%;
+            padding-bottom: 21.6%;
+            height: 0;
+            margin-left: 6%;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            margin-top: 14%;
+        }
+        .swiper-container3 h2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background:rgba(0,0,0,0.5);
+        }
+        .swiper-container3 h1{
+            font-size: 28px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            margin-top: 26%;
+        }
+        .swiper-container3  .swiper-button-prev{
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background:url(img/pr.png) center no-repeat;
+            background-size: 100% 100%;
+            top: 79%;
+            left: 7%;
+            outline: none; 
+        }
+        .swiper-container3  .swiper-button-next{
+            width: 78px;
+            height: 78px;
+            background:url(img/ne.png) center no-repeat;
+            background-size: 100% 100%;
+            top: 79%;
+            left: 16%;
+            outline: none; 
+        }
+        .swiper-container3  .swiper-button-prev:hover{
+            width: 78px;
+            height: 78px;
+            background:url(img/pr2.png) center no-repeat;
+            background-size: 100% 100%;
+        }
+        .swiper-container3  .swiper-button-next:hover{
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background:url(img/ne2.png) center no-repeat;
+            background-size: 100% 100%;
+        }
+        #box .ding{
+            position: absolute;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background: #5885EE;
+            text-align: center;
+            line-height: 66px;
+            top: 40%;
+            color: #fff;
+            font-size: 16px;
+            z-index: 10;
+        }
+        #ding{
+            left: 16%;
+        }
+        #ding2{
+            left: 32.2%;
+            display: none;
+        }
+        #box .world{
+            background:rgba(88,133,238,0.04);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <header>
+        <nav class="clearfix">
+            <a href="index.html" class="fl logo"></a>
+            <ul class="fr">
+                <li>
+                    <a href="translate.html">成为翻译官</a>
+                </li>
+                <li>
+                    <a href="product.html">产品</a>
+                </li>
+                <li>
+                    <a href="about.html">关于</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="con1">
+                    <div class="con1_1">
+                            <div class="QR_f" id="QR_f">
+                                <p>
+                                    <img src="img/qr_small.png" alt="" class="qr_small">
+                                    <i>客户端下载</i>
+                                </p>
+                                <img src="img/qr.jpg" alt="" class="QR">
+                            </div>
+                            <div class="swiper-container2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide1">
+                                        <div class="pos">
+                                            <h1>
+                                                把语言的沟通还给人类
+                                            </h1>
+                                            <h2>
+                                                communication isn’t conversion of language
+                                            </h2>
+                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide2">
+                                        <div class="pos">
+                                            <h1>
+                                                把语言的沟通还给人类
+                                            </h1>
+                                            <h2>
+                                                communication isn’t conversion of language
+                                            </h2>
+                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide3">
+                                        <div class="pos">
+                                            <h1>
+                                                把语言的沟通还给人类
+                                            </h1>
+                                            <h2>
+                                                communication isn’t conversion of language
+                                            </h2>
+                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Mask">
+                                <div class="cen">
+                                    <div class="swiper-container4">
+                                        <div class="swiper-wrapper"  id="swiper-wrapper4" >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="con2">
+                    <h1>社会价值</h1>
+                    <h2></h2>
+                    <ul id="ul">
+                        <li>
+                            <div>
+                                <h1>商务</h1>
+                                <p>时随地可以选择最合适您需求的翻译官提供最佳服务</p>
+                            </div>
+                            <img src="img/s1.png" alt="" srcset="" class="b_i">
+                            <img src="img/ss1.png" alt="" class="fly">
+                        </li>
+                        <li>
+                            <div>
+                                <h1>解决</h1>
+                                <p>闪译人工为您提供服务，快速解决您的问题</p>
+                            </div>
+                            <img src="img/s2.png" alt="" srcset="" class="b_i">
+                            <img src="img/ss2.png" alt="" class="fly">
+                        </li>
+                        <li>
+                            <div>
+                                <h1>赚钱</h1>
+                                <p>让您的语言天赋帮助更多人的同时获得收益</p>
+                            </div>
+                            <img src="img/s3.png" alt="" srcset="" class="b_i">
+                            <img src="img/ss3.png" alt="" class="fly">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-no-swiping">
+                <div class="con3">
+                    <div class="world">
+                        <div class="con3_1">
+                            <h1>全球化在线翻译服务</h1>
+                            <p>优译为用户快捷解决出国、商务洽谈等跨语言沟通难题，也为有多种语言能力的人提供有偿帮助他人的平台。</p>
+                        </div>
+                        <div class="world-bg"></div>
+                        <div class="world-globe">
+                            <div class="world-globe-pole"></div>
+                            <div class="world-globe-doms-container"></div>
+                            <div class="world-globe-halo"></div>
+                        </div>
+                        <img src="img/yin.png" alt="" class="yin">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div id="ding" class="ding">
+                        01
+                </div>
+                <div id="ding2" class="ding">
+                        
+                </div>
+                <div class="swiper-container3 swiper-no-swiping">
+                    <div class="swiper-wrapper" id="swiper-wrapper3">
+                        
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-slide_footer" >
+                    <footer>
+                        <ul class="clearfix">
+                            <li class="fl">
+                                <a href="opinion.html">意见反馈</a>
+                            </li>
+                            <li class="fl">
+                                <i>客服热线</i><span>+86 888 8888 88</span>
+                            </li>
+                            <li class="fr">
+                                客户端下载<img src="img/52.png" alt="" srcset="">
+                            </li>
+                        </ul>
+                        <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
+                    </footer>
+            </div>
+        </div>
+        
+    </div>
+    
+    <img src="img/down.gif" alt="" srcset="" class="down" id="down">
+    <img src="img/down.gif" alt="" srcset="" class="down2" id="down2">
+    </div>
+    <script src="js/swiper.min.js"></script>
+    <script src='js/dat.gui.min.js'></script>
+    <script src='js/Stats.js'></script>
+    <script src='js/css_globe_PerspectiveTransform.js'></script>
+    <script src='js/TweenMax.min.js'></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    
+    <!-- 动画 -->
+    <script>
+        var ul=document.getElementById('ul');
+        var QR_f=document.getElementById('QR_f');
+        var oli=ul.getElementsByTagName('li');
+        var t_f=true
+        for(var i=0;i<oli.length;i++){
+            oli[i].onmouseover=function(){
+                if(t_f){
+                    var oli_i=this.getElementsByTagName('img')[1];
+                    oli_i.className='dong fly';
+                    t_f=false;
+                    setTimeout(function(){
+                        oli_i.className='fly';
+                        t_f=true;
+                    },800);
+                }
+                    
+                    
+            };
+        }
+        QR_f.onmouseover=function(){
+            var QR_f_p=this.getElementsByTagName('p')[0]
+            var QR_f_i=this.getElementsByTagName('img')[0]
+            this.className='dong2 QR_f'
+            QR_f_p.className='dong4'
+            QR_f_i.className='dong5'
+        };
+        QR_f.onmouseout=function(){
+            var QR_f_p=this.getElementsByTagName('p')[0]
+            var QR_f_i=this.getElementsByTagName('img')[0]
+            this.className='dong3 QR_f'
+            QR_f_p.className='dong6'
+            QR_f_i.className='dong7'
+        };
+        
+
+    </script>
+    <!-- 地球仪 -->
+    <script>
+    var config = {
+        percent: 0,
+        lat: 0,
+        lng: 0,
+        segX: 14,
+        segY: 12,
+        isHaloVisible: true,
+        isPoleVisible: true,
+        autoSpin: true,
+        zoom: 0,
+    
+        skipPreloaderAnimation: false,
+    
+        goToBristol: function() {
+            goTo(51.4500, 2.5833);
+        }
+    };
+    
+    var stats;
+    var imgs;
+    var preloader;
+    var preloadPercent;
+    var globeDoms;
+    var vertices;
+    
+    var world;
+    var worldBg;
+    var globe;
+    var globeContainer;
+    var globePole;
+    var globeHalo;
+    
+    var pixelExpandOffset = 1.5;
+    var rX = 0;
+    var rY = 0;
+    var rZ = 0;
+    var sinRX;
+    var sinRY;
+    var sinRZ;
+    var cosRX;
+    var cosRY;
+    var cosRZ;
+    var dragX;
+    var dragY;
+    var dragLat;
+    var dragLng;
+    
+    var isMouseDown = false;
+    var isTweening = false;
+    var tick = 1;
+    
+    var URLS = {
+        bg: '',
+        diffuse: 'img/css_globe_diffuse.gif',
+        halo: 'img/aa.png',
+    };
+    
+    var transformStyleName = PerspectiveTransform.transformStyleName;
+    
+    function init(ref) {
+    
+        world = document.querySelector('.world');
+        worldBg = document.querySelector('.world-bg');
+        worldBg.style.backgroundImage = 'url(' + URLS.bg + ')';
+        globe = document.querySelector('.world-globe');
+        globeContainer = document.querySelector('.world-globe-doms-container');
+        globePole = document.querySelector('.world-globe-pole');
+        globeHalo = document.querySelector('.world-globe-halo');
+        globeHalo.style.backgroundImage = 'url(' + URLS.halo + ')';
+    
+    
+        regenerateGlobe();
+        
+        //隐藏右上角数据
+        // var gui = new dat.GUI();
+        // gui.add(config, 'lat', -90, 90).listen();
+        // gui.add(config, 'lng', -180, 180).listen();
+        // gui.add(config, 'isHaloVisible');
+        // gui.add(config, 'isPoleVisible');
+        // gui.add(config, 'autoSpin');
+        // gui.add(config, 'goToBristol');
+        // gui.add(config, 'zoom', 0, 1).listen();
+    
+        stats = new Stats();
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = 0;
+        stats.domElement.style.top = 0;
+            //隐藏左上角数据
+        //document.body.appendChild(stats.domElement);
+    
+        // events
+        world.ondragstart = function() {
+            return false;
+        };
+        world.addEventListener('mousedown', onMouseDown);
+        world.addEventListener('mousemove', onMouseMove);
+        world.addEventListener('mouseup', onMouseUp);
+        world.addEventListener('touchstart', touchPass(onMouseDown));
+        world.addEventListener('touchmove', touchPass(onMouseMove));
+        world.addEventListener('touchend', touchPass(onMouseUp));
+    
+        loop();
+    }
+    
+    function touchPass(func) {
+        return function(evt) {
+            evt.preventDefault();
+            func.call(this, {
+                pageX: evt.changedTouches[0].pageX,
+                //pageY: evt.changedTouches[0].pageY
+            });
+        };
+    }
+    
+    function onMouseDown(evt) {
+        isMouseDown = true;
+        dragX = evt.pageX;
+        //dragY = evt.pageY;
+        dragLat = config.lat;
+        dragLng = config.lng;
+    }
+    
+    function onMouseMove(evt) {
+        if (isMouseDown) {
+            var dX = evt.pageX - dragX;
+            //var dY = evt.pageY - dragY;
+            //config.lat = clamp(dragLat + dY * 0.5, -90, 90);
+            config.lng = clampLng(dragLng - dX * 0.5, -180, 180);
+        }
+    }
+    
+    function onMouseUp(evt) {
+        if (isMouseDown) {
+            isMouseDown = false;
+        }
+    }
+    
+    function regenerateGlobe() {
+        var dom, domStyle;
+        var x, y;
+        globeDoms = [];
+        while (dom = globeContainer.firstChild) {
+            globeContainer.removeChild(dom);
+        }
+    
+        var segX = config.segX;
+        var segY = config.segY;
+        var diffuseImgBackgroundStyle = 'url(' + URLS.diffuse + ')';
+        var segWidth = 1600 / segX | 0;
+        var segHeight = 800 / segY | 0;
+    
+        vertices = [];
+    
+        var verticesRow;
+        var radius = (536) / 2;
+    
+        var phiStart = 0;
+        var phiLength = Math.PI * 2;
+    
+        var thetaStart = 0;
+        var thetaLength = Math.PI;
+    
+        for (y = 0; y <= segY; y++) {
+    
+            verticesRow = [];
+    
+            for (x = 0; x <= segX; x++) {
+    
+                var u = x / segX;
+                var v = 0.05 + y / segY * (1 - 0.1);
+    
+                var vertex = {
+                    x: -radius * Math.cos(phiStart + u * phiLength) * Math.sin(thetaStart + v * thetaLength),
+                    y: -radius * Math.cos(thetaStart + v * thetaLength),
+                    z: radius * Math.sin(phiStart + u * phiLength) * Math.sin(thetaStart + v * thetaLength),
+                    phi: phiStart + u * phiLength,
+                    theta: thetaStart + v * thetaLength
+                };
+                verticesRow.push(vertex);
+            }
+            vertices.push(verticesRow);
+        }
+    
+        for (y = 0; y < segY; ++y) {
+            for (x = 0; x < segX; ++x) {
+                dom = document.createElement('div');
+                domStyle = dom.style;
+                domStyle.position = 'absolute';
+                domStyle.width = segWidth + 'px';
+                domStyle.height = segHeight + 'px';
+                domStyle.overflow = 'hidden';
+                domStyle[PerspectiveTransform.transformOriginStyleName] = '0 0';
+                domStyle.backgroundImage = diffuseImgBackgroundStyle;
+                dom.perspectiveTransform = new PerspectiveTransform(dom, segWidth, segHeight);
+                dom.topLeft = vertices[y][x];
+                dom.topRight = vertices[y][x + 1];
+                dom.bottomLeft = vertices[y + 1][x];
+                dom.bottomRight = vertices[y + 1][x + 1];
+                domStyle.backgroundPosition = (-segWidth * x) + 'px ' + (-segHeight * y) + 'px';
+                globeContainer.appendChild(dom);
+                globeDoms.push(dom);
+            }
+        }
+    
+    }
+    
+    function loop() {
+        requestAnimationFrame(loop);
+        stats.begin();
+        render();
+        stats.end();
+    }
+    
+    function render() {
+    
+        if (config.autoSpin && !isMouseDown && !isTweening) {
+            config.lng = clampLng(config.lng - 0.2);
+        }
+    
+        rX = config.lat / 180 * Math.PI;
+        rY = (clampLng(config.lng) - 270) / 180 * Math.PI;
+    
+        globePole.style.display = config.isPoleVisible ? 'block' : 'none';
+        globeHalo.style.display = config.isHaloVisible ? 'block' : 'none';
+    
+        var ratio = Math.pow(config.zoom, 1.5);
+        pixelExpandOffset = 1.5 + (ratio) * -1.25;
+        ratio = 1 + ratio * 3;
+        globe.style[transformStyleName] = 'scale3d(' + ratio + ',' + ratio + ',1)';
+        ratio = 1 + Math.pow(config.zoom, 3) * 0.3;
+        worldBg.style[transformStyleName] = 'scale3d(' + ratio + ',' + ratio + ',1)';
+    
+        transformGlobe();
+    }
+    
+    function clamp(x, min, max) {
+        return x < min ? min : x > max ? max : x;
+    }
+    
+    function clampLng(lng) {
+        return ((lng + 180) % 360) - 180;
+    }
+    
+    function transformGlobe() {
+    
+        var dom, perspectiveTransform;
+        var x, y, v1, v2, v3, v4, vertex, verticesRow, i, len;
+        if (tick ^= 1) {
+            //console.log(rY);
+            sinRY = Math.sin(rY);
+            sinRX = Math.sin(-rX);
+            sinRZ = Math.sin(rZ);
+            cosRY = Math.cos(rY);
+            cosRX = Math.cos(-rX);
+            cosRZ = Math.cos(rZ);
+    
+            var segX = config.segX;
+            var segY = config.segY;
+    
+            for (y = 0; y <= segY; y++) {
+                verticesRow = vertices[y];
+                for (x = 0; x <= segX; x++) {
+                    rotate(vertex = verticesRow[x], vertex.x, vertex.y, vertex.z);
+                }
+            }
+    
+            for (y = 0; y < segY; y++) {
+                for (x = 0; x < segX; x++) {
+                    dom = globeDoms[x + segX * y];
+    
+                    v1 = dom.topLeft;
+                    v2 = dom.topRight;
+                    v3 = dom.bottomLeft;
+                    v4 = dom.bottomRight;
+    
+                    expand(v1, v2);
+                    expand(v2, v3);
+                    expand(v3, v4);
+                    expand(v4, v1);
+    
+                    perspectiveTransform = dom.perspectiveTransform;
+                    perspectiveTransform.topLeft.x = v1.tx;
+                    perspectiveTransform.topLeft.y = v1.ty;
+                    perspectiveTransform.topRight.x = v2.tx;
+                    perspectiveTransform.topRight.y = v2.ty;
+                    perspectiveTransform.bottomLeft.x = v3.tx;
+                    perspectiveTransform.bottomLeft.y = v3.ty;
+                    perspectiveTransform.bottomRight.x = v4.tx;
+                    perspectiveTransform.bottomRight.y = v4.ty;
+                    perspectiveTransform.hasError = perspectiveTransform.checkError();
+    
+                    if (!(perspectiveTransform.hasError = perspectiveTransform.checkError())) {
+                        perspectiveTransform.calc();
+                    }
+                }
+            }
+        } else {
+            for (i = 0, len = globeDoms.length; i < len; i++) {
+                perspectiveTransform = globeDoms[i].perspectiveTransform;
+                if (!perspectiveTransform.hasError) {
+                    perspectiveTransform.update();
+                } else {
+                    perspectiveTransform.style[transformStyleName] = 'translate3d(-8192px, 0, 0)';
+                }
+            }
+        }
+    }
+    
+    function goTo(lat, lng) {
+        var dX = lat - config.lat;
+        var dY = lng - config.lng;
+        var roughDistance = Math.sqrt(dX * dX + dY * dY);
+        isTweening = true;
+        TweenMax.to(config, roughDistance * 0.01, {
+            lat: lat,
+            lng: lng,
+            ease: 'easeInOutSine'
+        });
+        TweenMax.to(config, 1, {
+            delay: roughDistance * 0.01,
+            zoom: 1,
+            ease: 'easeInOutSine',
+            onComplete: function() {
+                isTweening = false;
+            }
+        });
+    }
+    
+    function rotate(vertex, x, y, z) {
+        x0 = x * cosRY - z * sinRY;
+        z0 = z * cosRY + x * sinRY;
+        y0 = y * cosRX - z0 * sinRX;
+        z0 = z0 * cosRX + y * sinRX;
+    
+        var offset = 1 + (z0 / 4000);
+        x1 = x0 * cosRZ - y0 * sinRZ;
+        y0 = y0 * cosRZ + x0 * sinRZ;
+    
+        vertex.px = x1 * offset;
+        vertex.py = y0 * offset;
+    }
+    
+    // shameless stole and edited from threejs CanvasRenderer
+    function expand(v1, v2) {
+    
+        var x = v2.px - v1.px,
+            y = v2.py - v1.py,
+            det = x * x + y * y,
+            idet;
+    
+        if (det === 0) {
+            v1.tx = v1.px;
+            v1.ty = v1.py;
+            v2.tx = v2.px;
+            v2.ty = v2.py;
+            return;
+        }
+    
+        idet = pixelExpandOffset / Math.sqrt(det);
+    
+        x *= idet;
+        y *= idet;
+    
+        v2.tx = v2.px + x;
+        v2.ty = v2.py + y;
+        v1.tx = v1.px - x;
+        v1.ty = v1.py - y;
+    
+    }
+    
+    init();
+    </script>
+    <!-- Swiper -->
+    <script>
+        var header_1=document.getElementsByTagName('header')[0];
+        var ding=document.getElementById('ding');
+        var ding2=document.getElementById('ding2');
+        var down=document.getElementById('down');
+        var down2=document.getElementById('down2');
+        // 整屏滚动
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            mousewheel: true,
+            speed:1000,
+            slidesPerView: "auto",
+            on: {
+                slideChangeTransitionStart: function(){
+                    if(this.activeIndex>0){
+                        header_1.className='header' 
+                    }else{
+                        header_1.className='header2' 
+                    };
+                    
+                },
+                slideChangeTransitionEnd: function(){
+                    if(this.activeIndex==3){
+                        down.style.display='none'
+                        down2.style.display='block'
+                    }else{
+                        down.style.display='block'
+                        down2.style.display='none';
+                    }
+                }
+            },
+        
+        })     
+        //轮播图 
+        var mySwiper2 = new Swiper ('.swiper-container2', {
+            direction: 'horizontal',
+            autoplay:true,
+            loop:true,
+            effect : 'fade',
+            speed:1000,
+           
+        })
+        //自定义轮播 
+        var mySwiper3 = new Swiper ('.swiper-container3', {
+            direction: 'horizontal', 
+            centeredSlides: true,
+            slidesPerView: "auto",
+            speed:500,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChangeTransitionStart: function(){
+                    if(this.activeIndex>0){
+                        ding.style.display='none';
+                        ding2.style.display='block';
+                        var num=this.activeIndex+1
+                        ding2.innerHTML='0'+num
+                    }else{
+                        ding.style.display='block';
+                        ding2.style.display='none';
+                    }
+                    
+                },
+            },
+        }) 
+        var mySwiper4 = new Swiper ('.swiper-container4', {
+            direction: 'vertical', // 垂直切换选项
+            speed:1000,
+            autoplay:true,
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                type: "post",
+                url: 'http://47.254.43.55/admin/ajax/notice.php',
+                async : true,
+                dataType:'json',
+                success: function (data)
+                {
+                    for(var i=0;i<data.length;i++){
+                        var datas='<div class="swiper-slide"><span class="fl">公告</span><i>'+data[i].title+'</i></div>'
+                        mySwiper4.appendSlide(datas)
+                    };
+                     var swiper_container4=document.getElementById('swiper-wrapper4');
+                     var sss=swiper_container4.getElementsByTagName('div')
+                     for(var i=0;i<sss.length;i++){
+                        sss[i].new_id=data[i].id
+                        sss[i].onclick=function(){
+                            localStorage.setItem('new_id',this.new_id);
+                            location='new.html'
+                        }
+                    };
+                },
+            });
+            $.ajax({
+                type: "post",
+                url: 'http://47.254.43.55/admin/ajax/news.php',
+                async : true,
+                dataType:'json',
+                success: function (data)
+                {
+                   for(var i=0;i<data.length;i++){
+                        var datas='<div class="swiper-slide" style="background:url('+data[i].img+') center no-repeat;background-size: 100% 100%;"><h2></h2><h1>'+data[i].title+'</h1></div>'
+                        mySwiper3.appendSlide(datas)
+                    }
+                    var swiper_container3=document.getElementById('swiper-wrapper3');
+                    var sss3=swiper_container3.getElementsByTagName('div')
+                    for(var i=0;i<sss3.length;i++){
+                        sss3[i].new_id=data[i].id
+                        sss3[i].onclick=function(){
+                            localStorage.setItem('new_id',this.new_id);
+                            location='new.html'
+                        }
+                    }
+                },
+            });
+            
+        })
+        
+    </script>
+</body>
+</html>

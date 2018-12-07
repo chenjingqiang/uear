@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/rem.js"></script>
+    <style>
+        body{
+            background:rgba(0,0,0,0.08);  
+        }
+        #box{
+            width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            overflow: hidden;
+        }
+        #box .con{
+            position: relative;
+        }
+        #box .con img{
+            width: 100%;
+        }
+        #box .con a{
+            position: absolute;
+            width: 140px;
+            height: 40px;
+            top: 27px;
+            left: 38px;
+        }
+        #box p{
+            width:805px;
+            text-align: center;
+            margin: 40px auto;
+            font-size:20px;
+            font-weight:600;
+            color:rgba(0,0,0,0.8);
+            line-height:28px;
+        }
+        #box ul{
+            width: 888px;
+            margin: 0 auto;
+        }
+        #box ul li{
+            width: 888px;
+        }
+        #box ul li label{
+            display: block;
+            height:40px;
+            font-size:16px;
+            font-weight:600;
+            line-height:40px;
+            color:rgba(0,0,0,0.8);
+        }
+        #box ul li span{
+            float: left;
+            color: #F24D4C;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        #box ul li select{
+            width: 100%;
+            height: 48px;
+            font-size: 16px;
+            border:1px solid rgba(0,0,0,0.2);
+            padding-left: 35px;
+            margin-bottom: 40px;
+        }
+        #box ul li select option{
+            font-size: 16px;
+        }
+        #box ul li input{
+            width: 100%;
+            height: 48px;
+            border:1px solid rgba(0,0,0,0.2);
+            padding-left: 35px;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        #box ul li textarea{
+            width: 100%;
+            font-size: 16px;
+            height: 180px;
+            padding: 13px 35px;
+            border:1px solid rgba(0,0,0,0.2);
+        }
+        #box .inp{
+            display: block;
+            width:260px;
+            height:40px;
+            background:rgba(88,133,238,1);
+            border-radius:6px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-top: 55px;
+            margin-bottom: 100px;    
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="con">
+            <img src="img/option.png" alt="" srcset="">
+            <a href="index.html"></a>
+        </div>
+        <p>我们希望倾听您对优译的所有意见和建议。我们会认真阅读每一条内容，并持续面向公众进行公开回复。</p>
+        <ul class="con2">
+            <li>
+                <label for="identity">
+                    <span>*</span>
+                    我的身份是
+                </label>
+                <select name="identity" id="identity">
+                    <option value="">--请选择--</option>
+                    <option value="用户" style="color: #000;">用户</option>
+                    <option value="翻译官">翻译官</option>
+                </select>
+            </li>
+            <li>
+                <label for="contact">
+                    <span>*</span>
+                    我的联系方式
+                </label>
+                <input type="text" id="contact" name="contact" placeholder="留下联系方式，您可更快获得我们的反馈">
+            </li>
+            <li>
+                <label for="about">
+                    <span>*</span>
+                    我的意见是关于
+                </label>
+                <input type="text" id="about" name="about" placeholder="请填写关于">
+            </li>
+            <li>
+                <label for="content">
+                    <span>*</span>
+                    我的意见建议是
+                </label>
+                <textarea name="content" id="content" placeholder="请填写您的建议"></textarea>
+            </li>
+        </ul>
+        <a href="javascript:;" class="inp" id="inp">提交</a>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#inp').click(function(){
+                if($('#identity').val()==''){
+                    alert('请选择身份');
+                    return;
+                };
+                if($('#contact').val()==''){
+                    alert('请填写联系方式');
+                    return;
+                };
+                var ret = /^1[34578]\d{9}$/;
+                if(!ret.test($('#contact').val())){
+                    alert('请填写正确手机号');
+                    return;
+                };
+                if($('#about').val()==''){
+                    alert('请填写关于');
+                    return;
+                };
+                if($('#content').val()==''){
+                    alert('请填写意见');
+                    return;
+                };
+                var data={
+                    'identity':$('#identity').val(),
+                    'contact':$('#contact').val(),
+                    'about':$('#about').val(),
+                    'content':$('#content').val()
+                }
+                $.ajax({
+                    type: "post",
+                    url: 'http://47.254.43.55/admin/ajax/suggest.php',
+                    data:data,
+                    async : true,
+                    dataType:'json',
+                    success: function (data)
+                    {
+                        console.log(data)
+                        if(data.code=='1'){
+                            alert(data.message);
+                            location='javascript:history.back(-1)'
+                        }else{
+                            alert('提交失败')
+                        }
+                    },
+                });
+                })
+        })
+    </script>
+</body>
+</html>
