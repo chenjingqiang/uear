@@ -551,7 +551,9 @@
                                 <p>时随地可以选择最合适您需求的翻译官提供最佳服务</p>
                             </div>
                             <img src="img/s1.png" alt="" srcset="" class="b_i">
+                            
                             <img src="img/ss1.png" alt="" class="fly">
+                            <img src="img/ss1.gif" alt="" class="fly fly2">
                         </li>
                         <li>
                             <div>
@@ -559,7 +561,9 @@
                                 <p>闪译人工为您提供服务，快速解决您的问题</p>
                             </div>
                             <img src="img/s2.png" alt="" srcset="" class="b_i">
+                            
                             <img src="img/ss2.png" alt="" class="fly">
+                            <img src="img/ss2.gif" alt="" class="fly fly2">
                         </li>
                         <li>
                             <div>
@@ -567,7 +571,9 @@
                                 <p>让您的语言天赋帮助更多人的同时获得收益</p>
                             </div>
                             <img src="img/s3.png" alt="" srcset="" class="b_i">
+                            
                             <img src="img/ss3.png" alt="" class="fly">
+                            <img src="img/ss3.gif" alt="" class="fly fly2">
                         </li>
                     </ul>
                 </div>
@@ -643,7 +649,10 @@
         for(var i=0;i<oli.length;i++){
             oli[i].onmouseover=function(){
                 if(t_f){
+                    var oli_i1=this.getElementsByTagName('img')[2];
                     var oli_i=this.getElementsByTagName('img')[1];
+                    oli_i1.style.display='none';
+                    oli_i.style.display='block';
                     oli_i.className='dong fly';
                     t_f=false;
                     setTimeout(function(){
@@ -1066,6 +1075,12 @@
                     }else{
                         header_1.className='header2' 
                     };
+                    if(this.activeIndex==1){
+                       var fly2=document.getElementsByClassName('fly2');
+                       for(var i=0;i<fly2.length;i++){
+                         fly2[i].style.display='block';
+                       }
+                    }
                     
                 },
                 slideChangeTransitionEnd: function(){
