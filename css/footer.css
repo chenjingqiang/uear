@@ -1,41 +1,73 @@
-#box .swiper-slide_footer{
-    height:180px;
-    background:rgba(18,31,51,1);
+@media screen and (min-width: 800px) {
+    #box .footer{
+        display: none;
+    }
+    #box .swiper-slide_footer{
+        height:180px;
+        background:rgba(18,31,51,1);
+    }
+    #box footer{
+        width: 1200px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    #box footer ul{
+        padding: 40px 0;
+        border-bottom: 2px solid #5B6C86;
+    }
+    #box footer li{
+        height: 52px;
+        font-size: 18px;
+        line-height: 52px;
+        color: #5B6C86;
+    }
+    #box footer li a:hover{
+        color: #666;
+    }
+    #box footer li i{
+        color: #4B8FEA;
+        margin-left: 370px;
+    }
+    #box footer li span{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    #box footer li img{
+        width: 52px;
+        height: 52px;
+        margin-left: 15px;
+    }
+    #box footer p{
+        color: #5A6A86;
+        height: 26px;
+        line-height: 26px;
+        margin-top: 11px;
+    }
 }
-#box footer{
-    width: 1200px;
-    height: 180px;
-    margin: 0 auto;
-}
-#box footer ul{
-    padding: 40px 0;
-    border-bottom: 2px solid #5B6C86;
-}
-#box footer li{
-    height: 52px;
-    font-size: 18px;
-    line-height: 52px;
-    color: #5B6C86;
-}
-#box footer li a:hover{
-    color: #666;
-}
-#box footer li i{
-    color: #4B8FEA;
-    margin-left: 370px;
-}
-#box footer li span{
-    font-size: 14px;
-    margin-left: 15px;
-}
-#box footer li img{
-    width: 52px;
-    height: 52px;
-    margin-left: 15px;
-}
-#box footer p{
-    color: #5A6A86;
-    height: 26px;
-    line-height: 26px;
-    margin-top: 11px;
+@media screen and (max-width: 800px) {
+    #box .swiper-slide_footer{
+        display: none;
+    }
+    #box .footer{
+        width: 100%;
+        padding-bottom: 2.13333rem;
+    }
+    #box .footer h1{
+        text-align:  center;
+        height: 1.38666rem;
+        line-height: 1.38666rem;
+    }
+    #box .footer a,#box .footer i{
+        font-size: 0.64rem;
+    }
+    #box .footer span{
+        margin:0 0.64rem;
+    }
+    #box .footer p{
+        width: 100%;
+        text-align: center;
+        height: 1.38666rem;
+        line-height: 1.38666rem;
+    }
+    
 }

@@ -2,104 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>意见反馈</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/opinion.css">
     <script src="js/rem.js"></script>
     <style>
-        body{
-            background:rgba(0,0,0,0.08);  
-        }
-        #box{
-            width: 1000px;
-            margin: 0 auto;
-            background: #fff;
-            overflow: hidden;
-        }
-        #box .con{
-            position: relative;
-        }
-        #box .con img{
-            width: 100%;
-        }
-        #box .con a{
-            position: absolute;
-            width: 140px;
-            height: 40px;
-            top: 27px;
-            left: 38px;
-        }
-        #box p{
-            width:805px;
-            text-align: center;
-            margin: 40px auto;
-            font-size:20px;
-            font-weight:600;
-            color:rgba(0,0,0,0.8);
-            line-height:28px;
-        }
-        #box ul{
-            width: 888px;
-            margin: 0 auto;
-        }
-        #box ul li{
-            width: 888px;
-        }
-        #box ul li label{
-            display: block;
-            height:40px;
-            font-size:16px;
-            font-weight:600;
-            line-height:40px;
-            color:rgba(0,0,0,0.8);
-        }
-        #box ul li span{
-            float: left;
-            color: #F24D4C;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        #box ul li select{
-            width: 100%;
-            height: 48px;
-            font-size: 16px;
-            border:1px solid rgba(0,0,0,0.2);
-            padding-left: 35px;
-            margin-bottom: 40px;
-        }
-        #box ul li select option{
-            font-size: 16px;
-        }
-        #box ul li input{
-            width: 100%;
-            height: 48px;
-            border:1px solid rgba(0,0,0,0.2);
-            padding-left: 35px;
-            font-size: 16px;
-            margin-bottom: 40px;
-        }
-        #box ul li textarea{
-            width: 100%;
-            font-size: 16px;
-            height: 180px;
-            padding: 13px 35px;
-            border:1px solid rgba(0,0,0,0.2);
-        }
-        #box .inp{
-            display: block;
-            width:260px;
-            height:40px;
-            background:rgba(88,133,238,1);
-            border-radius:6px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 40px;
-            font-size: 16px;
-            color: #FFFFFF;
-            margin-top: 55px;
-            margin-bottom: 100px;    
-        }
+        
     </style>
 </head>
 <body>
@@ -117,7 +27,7 @@
                 </label>
                 <select name="identity" id="identity">
                     <option value="">--请选择--</option>
-                    <option value="用户" style="color: #000;">用户</option>
+                    <option value="用户">用户</option>
                     <option value="翻译官">翻译官</option>
                 </select>
             </li>
@@ -148,6 +58,14 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('#identity').change(function(){
+                if($('#identity').val()=='用户'||$('#identity').val()=='翻译官'){
+                    $('#identity').css("color","#000");
+                }else{
+                    $('#identity').css("color","#757575");
+                }
+            })
+            
             $('#inp').click(function(){
                 if($('#identity').val()==''){
                     alert('请选择身份');

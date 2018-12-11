@@ -1,0 +1,207 @@
+@media screen and (min-width: 800px) {
+    #box{
+        min-width: 1500px;
+        position: relative;
+    }
+    #box .ce_nav{
+        display: none;
+    }
+    #box .m_con{
+        display: none;
+    }
+    #box .m_con2{
+        display: none;
+    }
+    #box header{
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        background-color:rgba(0,0,0,0.3);
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    #box .con img{
+        width: 100%;
+    }
+    #box .con div{
+        width: 1200px;
+        position: absolute;;
+        left: 50%;
+        margin-left: -600px;
+        color: #fff;
+        top:8%;
+        text-align: center;
+    }
+    #box .con h1{
+        font-size: 40px;
+        height: 56px;
+        line-height: 56px;
+    }
+    #box .con p{
+        font-size: 24px;
+        height: 33px;
+        line-height: 33px;
+        margin-top: 6px;
+    }
+    #box .con2{
+        position: relative;;
+        width: 1200px;
+        margin: 0 auto;
+        height: 580px;
+        margin-top: -36px;
+        z-index: 10;
+        background: #fff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.2);
+        margin-bottom: 36px;
+    }
+    #box .con2_l{
+        width: 262px;
+        color: #5885EE;
+        line-height: 46px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        background:rgba(0,0,0,0.08);
+        height: 100%;
+    }
+    #box .con2_l i{
+        display: block;
+        height: 46px;
+        border-left: 3px solid #5885EE;
+        background: #fff;
+    }
+    #box .con2_r{
+        width: 938px;
+        padding: 40px 80px;
+    }
+    #box .con2_r h1{
+        font-size: 20px;
+        color: #5885EE;
+        margin-bottom: 60px;
+    }
+    #box .con2_r p{
+        font-size: 16px;
+        color:rgba(51,51,51,1);
+        line-height:30px;
+        letter-spacing:1px;
+        text-align:justify;
+    }
+}
+@media screen and (max-width: 800px) {
+     #box{
+        width: 100%;
+        overflow: hidden;
+    }
+    #box #back{
+        width: 0px;
+        height: 0px;
+    }
+    #box .m_con{
+        width: 100%;
+        height: 6.9333rem;
+        background:url(../img/m_fanyi.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .m_con h1{
+        text-align: center;
+        color: #fff;
+        font-size: 1.0666rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.2133rem;
+    }
+    #box .m_con p{
+        text-align: center;
+        color: #fff;
+        font-size: 0.746666rem;
+    }
+    @keyframes ce_nav_sta
+    {
+        0% {right: -8.64rem;}
+        100% {right: 0;}
+    }
+    @keyframes ce_nav_end
+    {
+        0% {right: 0;}
+        100% {right: -8.64rem;}
+    }
+    #box .ce_nav{
+        position: fixed;
+        top: 0;
+        right:-8.64rem;
+        width: 8.64rem;
+        height: 100%;
+        background: rgba(88,133,238,0.90);
+    }
+    #box .ce_nav_dong{
+        animation:ce_nav_sta 0.5s linear forwards;
+    }
+    #box .ce_nav_dong2{
+        animation:ce_nav_end 0.5s linear forwards;
+    }
+    #box .ce_nav div{
+        width: 100%;
+        height: 4.2666rem;
+        text-align: right;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.20);
+        line-height: 4.2666rem;
+    }
+    #box .ce_nav div img{
+        width: 0.74666rem;
+        margin-right: 0.8rem;
+    }
+    #box .ce_nav a{
+        display: block;
+        width: 100%;
+        height: 2.88rem;
+        line-height: 2.88rem;
+        font-size: 0.8533rem;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.20);
+        color: #fff;
+        padding-left: 2.2933rem;
+    }
+    #box .con{
+        display: none;
+    }
+    #box .con2{
+        display: none;
+    }
+    #box .m_con2{
+        width: 100%;
+        margin-top: 1.2266rem;
+    }
+    #box .m_con2 h1{
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.08);
+        margin-left: 0.8rem;
+        margin-bottom: 1.973333rem;
+    }
+    #box .m_con2 a{
+        color: #5885EE;
+        font-weight: bold;
+        font-size: 0.8533rem;
+        float: left;
+        width: 4.053rem;
+        text-align: center;
+        padding-bottom: 0.48rem;
+        border-bottom: 3px solid #5885EE;
+        margin-right: 1.6rem;
+    }
+    #box .m_con2 div{
+       text-align: justify;
+       padding: 0 0.8rem;
+       margin-bottom: 5.3333rem;
+    }
+    #box .m_con2 h2{
+        font-size: 0.8533rem;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 1.1733rem;
+    }
+    #box .m_con2 p{
+        font-size: 0.8rem;
+        color: #474747;
+        letter-spacing: 1px;
+        line-height: 1.6rem;
+    }
+}

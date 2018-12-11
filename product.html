@@ -2,107 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>产品</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/product.css">
     <script src="js/rem.js"></script>
-    <style>
-        #box{
-            min-width: 1500px;
-            position: relative;
-        }
-        #box header{
-            position: absolute;
-            width: 100%;
-            height: 80px;
-            background-color:rgba(0,0,0,0.3);
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-        #box .con img{
-            width: 100%;
-        }
-        #box .con div{
-            width: 1200px;
-            position: absolute;;
-            left: 50%;
-            margin-left: -600px;
-            color: #fff;
-            top:8%;
-            text-align: center;
-        }
-        #box .con h1{
-            font-size: 40px;
-            height: 56px;
-            line-height: 56px;
-        }
-        #box .con p{
-            font-size: 24px;
-            height: 33px;
-            line-height: 33px;
-            margin-top: 6px;
-        }
-        #box .con2{
-            margin: 0 auto;
-            margin-top: -1px;
-        }
-        #box .con2 ul li div{
-            width: 50%;
-        }
-        #box .con2 ul li div img{
-            width: 100%;
-        }
-        #box .con2 ul li div h1{
-            font-size: 18px;
-            color: #5885EE;
-            font-weight:bold;
-            line-height:25px;
-            margin-top: 10%;
-            margin-bottom: 10px;
-        }
-        #box .con2 ul li div p{
-            font-size: 16px;
-            color: #333333;
-            line-height:30px;
-            margin-left: 46%;
-            width: 46%;
-        }
-        #box .con2 ul .lef h1{
-            margin-left: 46%;
-        }
-        #box .con2 ul .lef p{
-            margin-left: 46%;
-        }
-        #box .con2 ul .rig h1{
-            margin-left: 10%;
-        }
-        #box .con2 ul .rig p{
-            margin-left: 10%;
-        }
-        #box .con3{
-            width: 100%;
-            position: relative;
-        }
-        #box .con3 img{
-            width: 100%;
-        }
-        #box .con3 h1{
-            width: 100%;
-            font-size: 24px;
-            color: #fff;
-            position: absolute;
-            top: 48%;
-            text-align: center;
-        }
-    </style>
+    
 </head>
 <body>
     <div id="box">
-        <img src="img/back.png" alt="" srcset="" id="back">    
         <header>
             <nav class="clearfix">
                 <a href="index.html" class="fl logo"></a>
@@ -119,6 +30,29 @@
                 </ul>
             </nav>
         </header>
+        <div class="ce_nav" id="ce_nav">
+            <div>
+                <img src="img/x.png" alt="" srcset="" id="m_nav2">
+            </div>
+            <a href="index.html">首页</a>
+            <a href="translate.html">成为翻译官</a>
+            <a href="product.html">产品</a>
+            <a href="about.html">关于</a>
+        </div>
+        <div class="m_con">
+            <header class="header2">
+                <a href="index.html" class="logo fl">
+                    <img src="img/m_logo.png" alt="" srcset="">
+                </a>
+                <div class="fr" id="m_nav">
+                    <img src="img/m_nav.png" alt="" srcset="">
+                </div>
+            </header>
+            <h1>
+                关于优译
+            </h1>
+            <p>一款真人实时在线口译翻译的App</p>
+        </div>
         <div class="con">
             <img src="img/translate.png" alt="">
             <div>
@@ -131,7 +65,7 @@
                 <li class="clearfix">
                     <div class="fl lef">
                         <h1>优译</h1>
-                        <p>用户根据翻译官的能力、专业、评价等条件，挑选中意的翻译官要求服务。 </p>
+                        <p>用户根据翻译官的能力、专业、评价等条件，挑选中意的翻译官要求服务。</p>
                     </div>
                     <div class="fr">
                         <img src="img/c1.png" alt="" srcset="">
@@ -139,8 +73,8 @@
                 </li>
                 <li class="clearfix  rig">
                     <div class="fr">
-                        <h1>优译</h1>
-                        <p>用户根据翻译官的能力、专业、评价等条件，挑选中意的翻译官要求服务。 </p>
+                        <h1>闪译</h1>
+                        <p>用户根据自己的使用场景、使用时长，要求快速非指定的翻译官提供服务。 </p>
                     </div>
                     <div class="fl">
                         <img src="img/c2.png" alt="" srcset="">
@@ -148,8 +82,8 @@
                 </li>
                 <li class="clearfix">
                     <div class="fl lef">
-                        <h1>优译</h1>
-                        <p>用户根据翻译官的能力、专业、评价等条件，挑选中意的翻译官要求服务。 </p>
+                        <h1>翻译官在线实时接单</h1>
+                        <p>注册成为优译翻译官，在线实时为用户提供翻译服务，获取相应的收益。</p>
                     </div>
                     <div class="fr">
                         <img src="img/c3.png" alt="" srcset="">
@@ -157,8 +91,8 @@
                 </li>
                 <li class="clearfix  rig">
                     <div class="fr">
-                        <h1>优译</h1>
-                        <p>用户根据翻译官的能力、专业、评价等条件，挑选中意的翻译官要求服务。 </p>
+                        <h1>优译私聊</h1>
+                        <p>让您和翻译官可以在进行专业服务前提前确认服务需求。</p>
                     </div>
                     <div class="fl">
                         <img src="img/c4.png" alt="" srcset="">
@@ -186,7 +120,30 @@
                 <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
             </footer>
         </div>
+        <div class="footer">
+            <h1>
+                <a href="opinion.html">意见反馈</a>
+                <span>|</span>
+                <a href="">客户端下载</a>
+                <span>|</span>
+                <i>客服热线+86 888 8888 88</i>
+            </h1>
+            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+        </div>
+        <img src="img/back.png" alt="" srcset="" id="back">    
     </div>
     <script src="js/back.js"></script>
+    <script>
+        var m_nav=document.getElementById('m_nav');
+        var m_nav2=document.getElementById('m_nav2');
+        var ce_nav=document.getElementById('ce_nav');
+        m_nav.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong';
+        };
+        m_nav2.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong2';
+        };
+    </script>
 </body>
 </html>

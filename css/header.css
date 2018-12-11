@@ -1,84 +1,113 @@
-
-#box header .logo{
-    width: 113px;
-    height: 24px;
-    margin-top: 23px;
-    background: url(../img/youyi1.png) center no-repeat;
-    background-size: 100% 100%;
+@media screen and (max-width: 800px) {
+    #box header{
+        display: none;
+    }
+    #box .header2{
+        display: block;
+        width: 100%;
+        height: 2.56rem;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.08);
+        line-height: 2.56rem;
+    }
+    #box .header2 .logo{
+        margin-left: 0.8rem;
+    }
+    #box .header2 .logo img{
+        width: 4.0533rem;
+    }
+    #box .header2 div{
+        line-height: 2.56rem;
+        margin-right: 0.8rem;
+    }
+    #box .header2 div img{
+        width: 1.226rem;
+    }
+    
+    
+    
 }
-@keyframes header_sta
-{
-    0% {background-color:rgba(0,0,0,0.3);}
-    100% {background:none;}
-}
-@keyframes header_end
-{
-    0% {background:none;}
-    100% {background-color:rgba(0,0,0,0.3);}
-}
-@keyframes header_sta2
-{
-    0% {color: #fff;}
-    100% {color: #000;}
-}
-@keyframes header_end2
-{
-    0% {color: #000;}
-    100% {color: #fff;}
-}
-@keyframes header_sta3
-{
-    0% { background: url(../img/youyi1.png) center no-repeat;}
-    100% { background: url(../img/youyi2.png) center no-repeat;}
-}
-@keyframes header_end3
-{
-    0% { background: url(../img/youyi2.png) center no-repeat;}
-    100% { background: url(../img/youyi1.png) center no-repeat;}
-}
-#box .header{
-    animation:header_sta 2s forwards ;
-}
-#box .header2{
-    animation:header_end 2s forwards ;
-}
-#box .header li a{
-    animation:header_sta2 2s forwards ;
-}
-#box .header2 li a{
-    animation:header_end2 2s forwards ;
-}
-#box .header .logo{
-    animation:header_sta3 2s forwards ;
-}
-#box .header2 .logo{
-    animation:header_end3 2s forwards ;
-}
-#box header nav{
-    width: 1200px;
-    height: 80px;
-    margin: 0 auto;
-}
-#box header li{
-    float: left;
-    margin-left: 40px;
-}
-#box header li a{
-    font-size: 15px;
-    color: #fff;
-    line-height: 80px;
-    font-weight: bold;
-}
-
-#box .act a{
-    color: #638CEF;
-}
-#box #back{
-    position: fixed;
-    top: auto;
-    left: auto;
-    right: 15px;
-    bottom: 30px;
-    display: none;
-    cursor: pointer;
+@media screen and (min-width: 800px) {
+    #box header .logo{
+        width: 113px;
+        height: 24px;
+        margin-top: 23px;
+        background: url(../img/youyi1.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+    @keyframes header_sta
+    {
+        0% {background-color:rgba(0,0,0,0.3);}
+        100% {background:none;}
+    }
+    @keyframes header_end
+    {
+        0% {background:none;}
+        100% {background-color:rgba(0,0,0,0.3);}
+    }
+    @keyframes header_sta2
+    {
+        0% {color: #fff;}
+        100% {color: #000;}
+    }
+    @keyframes header_end2
+    {
+        0% {color: #000;}
+        100% {color: #fff;}
+    }
+    @keyframes header_sta3
+    {
+        0% { background: url(../img/youyi1.png) center no-repeat;}
+        100% { background: url(../img/youyi2.png) center no-repeat;}
+    }
+    @keyframes header_end3
+    {
+        0% { background: url(../img/youyi2.png) center no-repeat;}
+        100% { background: url(../img/youyi1.png) center no-repeat;}
+    }
+    #box .header{
+        animation:header_sta 2s forwards ;
+    }
+    #box .header2{
+        animation:header_end 2s forwards ;
+    }
+    #box .header li a{
+        animation:header_sta2 2s forwards ;
+    }
+    #box .header2 li a{
+        animation:header_end2 2s forwards ;
+    }
+    #box .header .logo{
+        animation:header_sta3 2s forwards ;
+    }
+    #box .header2 .logo{
+        animation:header_end3 2s forwards ;
+    }
+    #box header nav{
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    #box header li{
+        float: left;
+        margin-left: 40px;
+    }
+    #box header li a{
+        font-size: 15px;
+        color: #fff;
+        line-height: 80px;
+        font-weight: bold;
+    }
+    
+    #box .act a{
+        color: #638CEF;
+    }
+    #box #back{
+        position: fixed;
+        top: auto;
+        left: auto;
+        right: 15px;
+        bottom: 30px;
+        display: none;
+        cursor: pointer;
+    }
 }

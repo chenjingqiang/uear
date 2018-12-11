@@ -1,0 +1,195 @@
+
+
+@media screen and (min-width: 800px) {
+    body{
+        background:rgba(0,0,0,0.08);  
+    }
+    #box{
+        width: 1000px;
+        margin: 0 auto;
+        background: #fff;
+        overflow: hidden;
+    }
+    #box .con{
+        position: relative;
+    }
+    #box .con img{
+        width: 100%;
+    }
+    #box .con a{
+        position: absolute;
+        width: 140px;
+        height: 40px;
+        top: 27px;
+        left: 38px;
+    }
+    #box p{
+        width:805px;
+        text-align: center;
+        margin: 40px auto;
+        font-size:20px;
+        font-weight:600;
+        color:rgba(0,0,0,0.8);
+        line-height:28px;
+    }
+    #box ul{
+        width: 888px;
+        margin: 0 auto;
+    }
+    #box ul li{
+        width: 888px;
+    }
+    #box ul li label{
+        display: block;
+        height:40px;
+        font-size:16px;
+        font-weight:600;
+        line-height:40px;
+        color:rgba(0,0,0,0.8);
+    }
+    #box ul li span{
+        float: left;
+        color: #F24D4C;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    #box ul li select{
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        border:1px solid rgba(0,0,0,0.2);
+        padding-left: 35px;
+        margin-bottom: 40px;
+        color:#757575;
+    }
+    #box ul li select option{
+        font-size: 16px;
+        color: #000;
+    }
+    #box ul li input{
+        width: 100%;
+        height: 48px;
+        border:1px solid rgba(0,0,0,0.2);
+        padding-left: 35px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    #box ul li textarea{
+        width: 100%;
+        font-size: 16px;
+        height: 180px;
+        padding: 13px 35px;
+        border:1px solid rgba(0,0,0,0.2);
+    }
+    #box .inp{
+        display: block;
+        width:260px;
+        height:40px;
+        background:rgba(88,133,238,1);
+        border-radius:6px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-top: 55px;
+        margin-bottom: 100px;    
+    }
+}
+@media screen and (max-width: 800px) {
+    #box{
+        width: 100%;
+        overflow: hidden;
+    }
+    #box .con{
+        position: relative;
+        margin-bottom: 2.1333rem;
+    }
+    #box .con img{
+        width: 100%;
+    }
+    #box .con a{
+        position: absolute;
+        top: 0.4rem;
+        left: 0.6rem;
+        width: 3.4133rem;
+        height: 1.06666rem;
+    }
+    #box p{
+        width:18.4rem;
+        text-align: center;
+        margin:0 auto;
+        font-size:0.7466rem;
+        font-weight:600;
+        color:rgba(0,0,0,0.8);
+        letter-spacing: 1px;
+        line-height: 1.28rem;
+        margin-bottom: 2.4533rem;
+    }
+    #box .con2{
+        width:18.4rem;
+        margin: 0 auto;
+    }
+    #box ul li label{
+        font-size: 0.7466rem;
+        color: rgba(0,0,0,0.80);
+        letter-spacing: 1px;
+        line-height: 1.06666rem;
+    }
+    #box ul li label span{
+        color: #D0021B;
+    }
+    #box ul li select{
+        display: block;
+        width: 17.12rem;
+        height: 2.0266rem;
+        margin: 0 auto;
+        font-size: 0.74666rem;
+        border:1px solid rgba(0,0,0,0.2);
+        padding-left: 1.33333rem;
+        margin-bottom:1.6rem;
+        margin-top: 0.64rem;
+        background: none;
+        color:#757575;
+    }
+    #box ul li select option{
+        color: #000;
+    }
+    #box ul li input{
+        display: block;
+        margin: 0 auto;
+        width: 17.12rem;
+        height: 2.0266rem;
+        border:1px solid rgba(0,0,0,0.2);
+        padding-left: 1.33333rem;
+        font-size: 0.74666rem;
+        margin-bottom: 1.6rem;
+        margin-top: 0.64rem;
+    }
+    #box ul li textarea{
+        display: block;
+        margin: 0 auto;
+        width: 17.12rem;
+        border:1px solid rgba(0,0,0,0.2);
+        padding: 0.5333rem ;
+        height: 4.05333rem;
+        margin-bottom:1.6rem;
+        margin-top: 0.64rem;
+        font-size: 0.74666rem;
+    }
+    #box .inp{
+        display: block;
+        width:13.333rem;
+        height:2.3466rem;
+        background:rgba(88,133,238,1);
+        border-radius:6px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2.3466rem;
+        font-size: 0.74666rem;
+        color: #FFFFFF;
+        margin-top: 3.2rem;
+        margin-bottom: 2.6666rem;
+    }
+    
+}
