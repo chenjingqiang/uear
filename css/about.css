@@ -67,9 +67,10 @@
     }
     #box .con2_l i{
         display: block;
-        height: 46px;
+        height: 68px;
         border-left: 3px solid #5885EE;
         background: #fff;
+        line-height: 68px;
     }
     #box .con2_r{
         width: 938px;

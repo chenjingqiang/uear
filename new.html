@@ -2,154 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>关于</title>
+    <title>新闻</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/myPagination.css">
+    <link rel="stylesheet" href="css/new.css">
+    <script src="js/rem.js"></script>
     <style>
-        html,body,#box{
-            height: 100%;
-        }
-        #box{
-            min-width: 1500px;
-            position: relative;
-        }
-        #box header{
-            width: 100%;
-            height: 80px;
-        }
-        #box header li a{
-            font-size: 15px;
-            color: #000;
-            line-height: 80px;
-        }
-        #box .con img{
-            width: 100%;
-        }
-        #box header .logo{
-            width: 113px;
-            height: 24px;
-            margin-top: 23px;
-            background: url(./img/youyi2.png) center no-repeat;
-            background-size: 100% 100%;
-        }
-        #box .con{
-            width: 100%;
-            background: url(./img/new.jpg) center no-repeat;
-            background-size: 100% 100%;
-            padding-top: 14px;
-            padding-bottom: 40px;
-        }
-        #box .con1{
-            width: 1280px;
-            margin: 0 auto;
-            color: #000;
-        }
-        #box .con1_l{
-            background: #fff;
-            min-height: 700px;
-            position: relative;
-        }
-       
-        #box .con1 h3{
-            width: 100%;
-            font-size: 26px;
-            line-height: 30px;
-        }
-        #box .con1 span{
-            display: block;
-            font-size: 14px;
-            margin: 10px 0;
-            color: #999;
-        }
-        #box #con1_l p, #box #con1_l div{
-            width: 100%;
-            text-align: justify;
-            font-size:16px;
-            color:rgba(51,51,51,1);
-            line-height:30px;
-            letter-spacing:1px;
-            text-indent: 2em;
-        }
-        #box #con1_l img{
-            width: 100%;
-            margin: 20px 0;
-        }
-        #box .con .con1_l{
-            width: 938px;
-            padding: 34px 80px;
-            padding-bottom: 100px;
-        }
-        #box .con .u_d{
-            width: 100%;
-            position: absolute;
-            bottom: 30px;
-            right: 82px;
-            text-align: right;
-        }
-        #box .con .u_d a{
-            line-height: 30px;
-            color: #333333;
-            margin-left: 80px;
-        }
-        #box .con .u_d a:hover{
-            color: #333333;
-        }
-        #box .con .u_d img{
-            width: 30px;
-            height: 30px;
-            margin: 0 8px;
-        }
-        #box .con .con1_r{
-            width: 328px;
-
-        }
-        #box .con .con1_r h1{
-            border-left: 2px solid #5885EE;
-            height:22px;
-            line-height: 22px;
-            font-size:16px;
-            font-weight: bold;
-            color: #111;
-            margin-bottom: 14px;
-            padding-left: 29px;
-        }
-        #box .con .con1_r #xg{
-            height: 136px;
-        }
-        #box .con .con1_r #hot{
-            height: 136px;
-        }
-        #box .con .con1_r li{
-            font-size: 14px;
-            padding-left: 29px;
-            color: #333;
-            height: 20px;
-            line-height: 17px;
-            margin-bottom: 7px;
-            cursor: pointer;
-        }
-        #box .con .con1_r i{
-            display: block;
-            width: 327px;
-            height:1px;
-            margin: 0 auto;
-            background:#000000;
-            opacity: 0.1;
-        }
-        .xg{
-            padding: 26px 0;
-            background: #fff;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <div id="box">
-        <img src="img/back.png" alt="" srcset="" id="back">    
         <header>
             <nav class="clearfix">
                 <a href="index.html" class="fl logo"></a>
@@ -166,28 +32,52 @@
                 </ul>
             </nav>
         </header>
+        <div class="ce_nav" id="ce_nav">
+            <div>
+                <img src="img/x.png" alt="" srcset="" id="m_nav2">
+            </div>
+            <a href="index.html">首页</a>
+            <a href="translate.html">成为翻译官</a>
+            <a href="product.html">产品</a>
+            <a href="about.html">关于</a>
+        </div>
+        <div class="m_con">
+            <header class="header2">
+                <a href="index.html" class="logo fl">
+                    <img src="img/m_logo1.png" alt="" srcset="">
+                </a>
+                <div class="fr" id="m_nav">
+                    <img src="img/m_nav1.png" alt="" srcset="">
+                </div>
+            </header>
+        </div>
         <div class="con">
             <div class="con1 clearfix">
                 <div class="con1_l fl">
                     <div  id="con1_l">
-
-                    </div>
+                    </div>  
                     <div class="u_d">
                         <a href="javascript:;" id="prev"><img src="img/up.png" alt="">上一篇</a>
                         <a href="javascript:;" id="next">下一篇<img src="img/down.png" alt=""></a>
                     </div>
                 </div>
+                <div class="m_con1_r clearfix" id="qh">
+                    <a href="javascript:;" class="b">相关文章</a>
+                    <a href="javascript:;" class="">热门资讯</a>
+                </div>
                 <div class="con1_r fr">
-                    <div class="xg">
+                    <div class="xg" id="xg_f">
                         <h1>相关文章</h1>
                         <ul id="xg">
+                            
                         </ul>
                         <i></i>
                         <div id="pagination" class="pagination"></div>
                     </div>
-                    <div class="xg">
+                    <div class="xg" id="hot_f">
                         <h1>热门资讯</h1>
                         <ul id="hot">
+                            
                         </ul>
                         <i></i>
                         <div id="pagination2" class="pagination"></div>
@@ -212,20 +102,36 @@
                 <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
             </footer>
         </div>
+        <div class="footer">
+            <h1>
+                <a href="opinion.html">意见反馈</a>
+                <span>|</span>
+                <a href="">客户端下载</a>
+                <span>|</span>
+                <i>客服热线+86 888 8888 88</i>
+            </h1>
+            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+        </div>
+        <img src="img/back.png" alt="" srcset="" id="back"> 
     </div>
     <script src="js/back.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/myPagination.js"></script>
     <script>
-        
+        if(document.documentElement.clientWidth<800){
+            var pc_yd='yd';
+        }else{
+            var pc_yd='pc';
+        }
     </script>
     <script>
         $(document).ready(function(){
+            
             var new_id=localStorage.getItem('new_id');
-            console.log(new_id)
             $.ajax({
                 type: "post",
-                url: 'http://47.254.43.55/admin/ajax/news_info.php',
+                url: 'http://39.105.114.96/admin/ajax/news_info.php',
                 data:{
                     'id':new_id,
                 },
@@ -241,7 +147,12 @@
                 xg.innerHTML='';
                 for(var i=0;i<datas.length;i++){
                     var oli=document.createElement('li');
-                    oli.innerHTML=datas[i].title;
+                    oli.className='clearfix'
+                    if(pc_yd=='yd'){
+                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>2018-10-12</i></div>'
+                    }else{
+                        oli.innerHTML=datas[i].title;
+                    }
                     oli._location=datas[i].id;
                     oli.onclick=function(){
                         localStorage.setItem('new_id',this._location);
@@ -255,7 +166,12 @@
                 hot.innerHTML='';
                 for(var i=0;i<datas.length;i++){
                     var oli=document.createElement('li');
-                    oli.innerHTML=datas[i].title;
+                    oli.className='clearfix'
+                    if(pc_yd=='yd'){
+                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>2018-10-12</i></div>'
+                    }else{
+                        oli.innerHTML=datas[i].title;
+                    }
                     oli._location=datas[i].id;
                     oli.onclick=function(){
                         localStorage.setItem('new_id',this._location);
@@ -267,10 +183,11 @@
             //相关文章
             $.ajax({
                 type: "post",
-                url: 'http://47.254.43.55/admin/ajax/news_correlation.php',
+                url: 'http://39.105.114.96/admin/ajax/news_correlation.php',
                 data:{
                     'id':new_id,
-                    'page':1
+                    'page':1,
+                    'pc_yd':pc_yd,
                 },
                 async : true,
                 dataType:'json',
@@ -278,11 +195,17 @@
                 {
                     creat(data.arr)
                     var num=data.alldata;
-                    var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                    if(pc_yd=='yd'){
+                        var pageAmount=3;
+                        var pageTotal=Number(((num/3)+'').split('.')[0])+1;
+                    }else{
+                        var pageAmount=5;
+                        var pageTotal=Number(((num/5)+'').split('.')[0])+1;
+                    }
                     new Page({
                         id: 'pagination',
                         pageTotal: pageTotal, //必填,总页数
-                        pageAmount: 5,  //每页多少条
+                        pageAmount: pageAmount,  //每页多少条
                         dataTotal: num, //总共多少条数据
                         curPage:1, //初始页码,不填默认为1
                         pageSize:3, //分页个数,不填默认为5
@@ -292,9 +215,10 @@
                             //获取当前页数
                             $.ajax({
                                 type: "post",
-                                url: 'http://47.254.43.55/admin/ajax/news_correlation.php',
+                                url: 'http://39.105.114.96/admin/ajax/news_correlation.php',
                                 data:{
                                     'id':new_id,
+                                    'pc_yd':pc_yd,
                                     'page':page
                                 },
                                 async : true,
@@ -312,22 +236,30 @@
             //热门文章
             $.ajax({
                 type: "post",
-                url: 'http://47.254.43.55/admin/ajax/news_hot.php',
+                url: 'http://39.105.114.96/admin/ajax/news_hot.php',
                 data:{
                     'id':new_id,
-                    'page':1
+                    'page':1,
+                    'pc_yd':pc_yd
                 },
                 async : true,
                 dataType:'json',
                 success: function (data)
                 {
-                    creat2(data.arr)
                     var num=data.alldata;
-                    var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                    if(pc_yd=='yd'){
+                        var pageAmount=3
+                        var pageTotal=Number(((num/3)+'').split('.')[0])+1
+                    }else{
+                        var pageAmount=5
+                        var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                    }
+                    creat2(data.arr)
+                    
                     new Page({
                         id: 'pagination2',
                         pageTotal: pageTotal, //必填,总页数
-                        pageAmount: 5,  //每页多少条
+                        pageAmount: pageAmount,  //每页多少条
                         dataTotal: num, //总共多少条数据
                         curPage:1, //初始页码,不填默认为1
                         pageSize:3, //分页个数,不填默认为5
@@ -337,15 +269,17 @@
                             //获取当前页数
                             $.ajax({
                                 type: "post",
-                                url: 'http://47.254.43.55/admin/ajax/news_hot.php',
+                                url: 'http://39.105.114.96/admin/ajax/news_hot.php',
                                 data:{
                                     'id':new_id,
-                                    'page':page
+                                    'page':page,
+                                    'pc_yd':pc_yd
                                 },
                                 async : true,
                                 dataType:'json',
                                 success: function (data)
                                 {
+                                    console.log(data)
                                     creat2(data.arr)
                                 }
                             })
@@ -360,7 +294,7 @@
             function n_p(act){
                 $.ajax({
                     type: "post",
-                    url: 'http://47.254.43.55/admin/ajax/news_beside.php',
+                    url: 'http://39.105.114.96/admin/ajax/news_beside.php',
                     data:{
                         'id':new_id,
                         'act':act
@@ -382,6 +316,40 @@
             };
         });
         
+    </script>
+    <script>
+        if(pc_yd=='yd'){
+            var qh=document.getElementById('qh');
+            var as=qh.getElementsByTagName('a');
+            var xg_f=document.getElementById('xg_f');
+            var hot_f=document.getElementById('hot_f');
+            hot_f.style.display='none';
+            for(var i=0;i<as.length;i++){
+                as[0].onclick=function(){
+                    this.className='b';
+                    as[1].className='';
+                    hot_f.style.display='none';
+                    xg_f.style.display='block';
+                }
+                as[1].onclick=function(){
+                    this.className='b';
+                    as[0].className='';
+                    hot_f.style.display='block';
+                    xg_f.style.display='none';
+                }
+            }
+        }
+    </script>
+    <script>
+        var m_nav=document.getElementById('m_nav');
+        var m_nav2=document.getElementById('m_nav2');
+        var ce_nav=document.getElementById('ce_nav');
+        m_nav.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong';
+        };
+        m_nav2.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong2';
+        };
     </script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -356,15 +356,15 @@
         }
         .swiper-container2 .swiper-slide1{
             background: url(img/bj.jpg) center no-repeat;
-            background-size: 100% 100%;
+            background-size:cover;
         }
         .swiper-container2 .swiper-slide2{
             background: url(img/bj2.jpg) center no-repeat;
-            background-size: 100% 100%;
+            background-size:cover;
         }
         .swiper-container2 .swiper-slide3{
             background: url(img/bj3.jpg) center no-repeat;
-            background-size: 100% 100%;
+            background-size:cover;
         }
         /* .swiper-container3 .swiper-wrapper{
             display: flex;
@@ -1139,7 +1139,7 @@
         $(document).ready(function(){
             $.ajax({
                 type: "post",
-                url: 'http://47.254.43.55/admin/ajax/notice.php',
+                url: 'http://39.105.114.96/admin/ajax/notice.php',
                 async : true,
                 dataType:'json',
                 success: function (data)
@@ -1161,7 +1161,7 @@
             });
             $.ajax({
                 type: "post",
-                url: 'http://47.254.43.55/admin/ajax/news.php',
+                url: 'http://39.105.114.96/admin/ajax/news.php',
                 async : true,
                 dataType:'json',
                 success: function (data)
