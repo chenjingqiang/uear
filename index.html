@@ -5,477 +5,56 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index2.css">
     <script src="js/rem.js"></script>
-    <style>
-        html,body,#box{
-            height: 100%;
-            min-width: 1500px;
-        }
-        #box header{
-            position: fixed;
-            width: 100%;
-            height: 80px;
-            background-color:rgba(0,0,0,0.3);
-            top: 0;
-            left: 0;
-            z-index: 10;
-        }
-        #box .down{
-            width: 40px;
-            position: fixed;
-            left: 50%;
-            margin-left: -13px;
-            bottom: 40px;
-            z-index: 1;
-        }
-        #box .down2{
-            width: 40px;
-            position: fixed;
-            left: 50%;
-            margin-left: -13px;
-            bottom: 40px;
-            display: none;            
-        }
-        #box .con1 {
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-            position: relative;
-            height: 100%;
-        }
-        #box .con1 .bj{
-            width: 100%;
-            height: 100%;
-            min-width: 1200px;
-        }
-        #box .con1 .con1_1{
-            width: 100%;
-            height: 100%;
-        } 
-        
-        #box .con1 .pos{
-            width: 100%;
-            position: absolute;
-            top: 30%;
-            left: 0;
-            text-align: center;
-        }
-        #box .con1 h1{
-            width: 100%;
-            font-size: 58px;
-            height: 90px;
-            line-height: 90px;
-        }
-        #box .con1 h2{
-            width: 100%;
-            font-size: 28px;
-            height: 45px;
-            line-height: 45px;
-            margin-bottom: 60px;
-            left: 0;
-        }
-        #box .con1 .btn{
-            display: block;
-            margin: 0 auto;
-            width: 287px;
-            height: 55px;
-            line-height: 55px;
-            font-size: 20px;
-            background: #5885EE;
-            color: #fff;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-        @keyframes bot_str
-        {
-            0% {height: 50px;}
-            100% {height: 150px;}
-        }
-        @keyframes bot_end
-        {
-            0% {height: 150px;}
-            100% {height: 50px;}
-        }
-        @keyframes bot_str2
-        {
-            0% {margin-left: 0px;}
-            100% {margin-left: -60px;}
-        }
-        @keyframes bot_end2
-        {
-            0% {margin-left: -60px;}
-            100% {margin-left: 0px;}
-        }
-        @keyframes bot_str3
-        {
-            0% {opacity: 1;}
-            100% {opacity: 0;}
-        }
-        @keyframes bot_end3
-        {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-        }
-        #box .con1 .QR_f{
-            width: 148px;
-            height: 50px;
-            overflow: hidden;
-            margin: 0 auto;
-            text-align: left;
-            margin-top: 50px;
-            text-align: center;
-            box-shadow: #ccc 0px 0px 1px 1px;
-            padding-top: 4px;
-            cursor: pointer;
-            position: absolute;
-            top: 58%;
-            left: 50%;
-            margin-left: -74px;
-            z-index: 11;
-        }
-        #box .con1 .dong2{
-	        animation:bot_str 0.5s forwards ;
-        }
-        #box .con1 .dong3{
-	        animation:bot_end 0.5s forwards ;
-        }
-        #box .con1 .QR_f p{
-            line-height: 40px;
-            font-size: 16px;
-        }
-        #box .con1 .QR_f p i{
-            margin-left: 10px;
-            opacity: 0.8;
-        }
-        #box .con1 .QR_f .dong4{
-            animation:bot_str2 0.5s forwards ;
-        }
-        #box .con1 .QR_f .dong5{
-            animation:bot_str3 0.5s forwards ;
-        }
-        #box .con1 .QR_f .dong6{
-            animation:bot_end2 0.5s forwards ;
-        }
-        #box .con1 .QR_f .dong7{
-            animation:bot_end3 0.5s forwards ;
-        }
-        #box .con1 .QR_f .qr_small{
-            width: 40px;
-            height: 40px;
-        }
-        #box .con1 .QR{
-            width: 80px;
-            height: 80px;
-            margin-top: 15px;
-        }
-        #box .con1 .Mask{
-            width: 100%;
-            height: 40px;
-            background-color:rgba(0,0,0,0.3);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            text-align: left;
-            z-index: 10;
-        }
-        #box .con1 .Mask .cen{
-            margin: 0 auto;
-            width: 1200px;
-            line-height: 40px;
-            font-size: 14px;
-        }
-        #box .swiper-container4{
-            height: 40px;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        #box .con1 .Mask .cen span{
-            width: 47px;
-            height: 18px;
-            background: #E76F00;
-            text-align: center;
-            line-height: 18px;
-            border-radius: 4px;
-            margin-top:11px;
-            margin-right: 15px;
-            font-size: 12px;
-        }
-        #box .con2{
-            width: 100%;
-            overflow: hidden;
-        }
-        #box .con2 h1{
-            font-size: 30px;
-            height: 42px;
-            line-height: 42px;
-            text-align: center;
-            margin-top: 120px;
-            margin-bottom: 10px;
-            color: #132550;
-        }
-        #box .con2 h2{
-            width:36px;
-            height:1px;
-            border:3px solid #132550;
-            margin: 0 auto;
-            margin-bottom: 130px;
-        }
-        #box .con2 ul{
-            width: 100%; 
-        }
-        #box .con2 li{
-            width: 33.333333333%;
-            float: left;
-            position: relative;
-        }
-        #box .con2 div{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            color: #fff;
-        }
-        #box .con2 div h1{
-            width: 100%;
-            font-size: 38px;
-            color: #fff;
-            text-align: center;
-            margin-top: 36%;
-            margin-bottom: 4%;
-        }
-        #box .con2 div p{
-            width: 40%;
-            font-size: 16px;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 24px;
-            opacity: 0.8;
-        }
-        /* 旋转 */
-        @keyframes myfirst
-        {
-            from {transform: rotate(0deg);}
-            to {transform: rotate(360deg);}
-        }
-        /* 下滑 */
-        
-        #box .con2 li .b_i{
-            width: 100%;
-        }
-        #box .con2 li .dong{
-	        animation:myfirst 0.8s linear;
-        }
-        #box .con2 li .fly{ 
-            width: 51%;
-            height: 62%;
-            position: absolute;
-            top: 26%;
-            left: 25%;
-        }
-        #box .con3{
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        .world {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-            cursor: move;
-            cursor: -moz-grab;
-            cursor: -webkit-grab;
-            cursor: grab;
-        }
-        .world-bg {
-            position: absolute;
-            width: 100%;
-            background-position: 50% 50%;
-            background-size: cover;
-        }
-        .world-globe {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 0;
-            height: 0;
-        }
-        .world-globe-pole {
-            position: absolute;
-            width: 530px;
-            height: 530px;
-            left: -265px;
-            top: -265px;
-            border-radius: 50% 50%;
-        }
-        .world-globe-doms-container {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 0;
-            height: 0;
-        }
-        .world-globe-halo {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            width: 730px;
-            height: 715px;
-            margin-left: -368px;
-            margin-top: -350px;
-        }
-        #box .con3 .con3_1{
-            width: 1200px;
-            margin: 0 auto;
-            color: #8095C7;
-        }
-        #box .con3 .con3_1 h1{
-            margin-top: 15%;
-            margin-bottom: 3%;
-            font-size: 30px;
-            color: #132550;
-        }
-        #box .con3 .con3_1 p{
-            width: 236px;
-            text-align: justify;
-            font-size: 20px;
-            line-height: 23px;
-        }
-        #box .con3 .yin{
-            display: block;
-            margin: 0 auto;
-            width: 530px;
-            margin-top: 21%;
-        }
-        .swiper-container,.swiper-container2,.swiper-container3{
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-container2 .swiper-slide1{
-            background: url(img/bj.jpg) center no-repeat;
-            background-size:cover;
-        }
-        .swiper-container2 .swiper-slide2{
-            background: url(img/bj2.jpg) center no-repeat;
-            background-size:cover;
-        }
-        .swiper-container2 .swiper-slide3{
-            background: url(img/bj3.jpg) center no-repeat;
-            background-size:cover;
-        }
-        /* .swiper-container3 .swiper-wrapper{
-            display: flex;
-            align-items: center;
-            width: 100%;
-        } */
-        .swiper-container3 .swiper-wrapper{
-            width: 100%;
-        }
-        .swiper-container3 .swiper-wrapper .swiper-slide{
-            width: 38%;
-            padding-bottom: 21.6%;
-            height: 0;
-            margin-left: 6%;
-            cursor: pointer;
-            overflow: hidden;
-            position: relative;
-            margin-top: 14%;
-        }
-        .swiper-container3 h2{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 150%;
-            background:rgba(0,0,0,0.5);
-        }
-        .swiper-container3 h1{
-            font-size: 28px;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-            margin-top: 26%;
-        }
-        .swiper-container3  .swiper-button-prev{
-            width: 78px;
-            height: 78px;
-            border-radius: 50%;
-            background:url(img/pr.png) center no-repeat;
-            background-size: 100% 100%;
-            top: 79%;
-            left: 7%;
-            outline: none; 
-        }
-        .swiper-container3  .swiper-button-next{
-            width: 78px;
-            height: 78px;
-            background:url(img/ne.png) center no-repeat;
-            background-size: 100% 100%;
-            top: 79%;
-            left: 16%;
-            outline: none; 
-        }
-        .swiper-container3  .swiper-button-prev:hover{
-            width: 78px;
-            height: 78px;
-            background:url(img/pr2.png) center no-repeat;
-            background-size: 100% 100%;
-        }
-        .swiper-container3  .swiper-button-next:hover{
-            width: 78px;
-            height: 78px;
-            border-radius: 50%;
-            background:url(img/ne2.png) center no-repeat;
-            background-size: 100% 100%;
-        }
-        #box .ding{
-            position: absolute;
-            width: 66px;
-            height: 66px;
-            border-radius: 50%;
-            background: #5885EE;
-            text-align: center;
-            line-height: 66px;
-            top: 40%;
-            color: #fff;
-            font-size: 16px;
-            z-index: 10;
-        }
-        #ding{
-            left: 16%;
-        }
-        #ding2{
-            left: 32.2%;
-            display: none;
-        }
-        #box .world{
-            background:rgba(88,133,238,0.04);
-        }
-    </style>
+    
 </head>
 <body>
     <div id="box">
     <header>
-        <nav class="clearfix">
-            <a href="index.html" class="fl logo"></a>
-            <ul class="fr">
-                <li>
-                    <a href="translate.html">成为翻译官</a>
-                </li>
-                <li>
-                    <a href="product.html">产品</a>
-                </li>
-                <li>
-                    <a href="about.html">关于</a>
-                </li>
-            </ul>
-        </nav>
+        <div style="width: 99.2%;">
+            <nav class="clearfix">
+                <a href="index.html" class="fl logo"></a>
+                <ul class="fr">
+                    <li>
+                        <a href="translate.html">成为翻译官</a>
+                    </li>
+                    <li>
+                        <a href="product.html">产品</a>
+                    </li>
+                    <li>
+                        <a href="about.html">关于</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
-    
+    <div class="ce_nav" id="ce_nav">
+        <div>
+            <img src="img/x.png" alt="" srcset="" id="m_nav2">
+        </div>
+        <a href="index.html">首页</a>
+        <a href="translate.html">成为翻译官</a>
+        <a href="product.html">产品</a>
+        <a href="about.html">关于</a>
+    </div>
+    <div class="m_con">
+        <header class="header2">
+            <a href="index.html" class="logo fl">
+                <img src="img/m_logo.png" alt="" srcset="" id="m_logo">
+            </a>
+            <div class="fr" id="m_nav">
+                <img src="img/m_nav.png" alt="" srcset="">
+            </div>
+        </header>
+    </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -505,7 +84,7 @@
                                     <div class="swiper-slide swiper-slide2">
                                         <div class="pos">
                                             <h1>
-                                                把语言的沟通还给人类
+                                                把语言的沟通还给人类2
                                             </h1>
                                             <h2>
                                                 communication isn’t conversion of language
@@ -537,28 +116,26 @@
                                 </div>
                             </div>
                     </div>
-                    
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="con2">
-                    <h1>社会价值</h1>
+                    <h3>社会价值</h3>
                     <h2></h2>
                     <ul id="ul">
                         <li>
                             <div>
                                 <h1>商务</h1>
-                                <p>时随地可以选择最合适您需求的翻译官提供最佳服务</p>
+                                <p>闪译人工为您提供服务，快速解决您的问题</p>
                             </div>
                             <img src="img/s1.png" alt="" srcset="" class="b_i">
-                            
                             <img src="img/ss1.png" alt="" class="fly">
                             <img src="img/ss1.gif" alt="" class="fly fly2">
                         </li>
                         <li>
-                            <div>
+                            <div class="rrr">
                                 <h1>解决</h1>
-                                <p>闪译人工为您提供服务，快速解决您的问题</p>
+                                <p>让您的语言天赋帮助更多人的同时获得收益</p>
                             </div>
                             <img src="img/s2.png" alt="" srcset="" class="b_i">
                             
@@ -568,22 +145,27 @@
                         <li>
                             <div>
                                 <h1>赚钱</h1>
-                                <p>让您的语言天赋帮助更多人的同时获得收益</p>
+                                <p>随时随地可以选择最合适您需求的翻译官提供最佳服务</p>
                             </div>
                             <img src="img/s3.png" alt="" srcset="" class="b_i">
-                            
                             <img src="img/ss3.png" alt="" class="fly">
                             <img src="img/ss3.gif" alt="" class="fly fly2">
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="swiper-slide swiper-no-swiping">
+            <div class="swiper-slide" id="no_dq">
                 <div class="con3">
+                    <h6>
+                        全球真人实时在线翻译服务
+                    </h6>
+                    <img src="img/dq.gif" alt="" class="dq">
+                    <img src="img/yy.png" alt="" srcset="" class="yy">
                     <div class="world">
                         <div class="con3_1">
-                            <h1>全球化在线翻译服务</h1>
-                            <p>优译为用户快捷解决出国、商务洽谈等跨语言沟通难题，也为有多种语言能力的人提供有偿帮助他人的平台。</p>
+                            <h1>全球真人实时在线翻译服务</h1>
+                            <p>全球千百名不同语言、不同专业的翻译官实时在线，随时期待为您提供不同情况下的专业语言翻译服务。优译伴您走遍世界。
+                            </p>
                         </div>
                         <div class="world-bg"></div>
                         <div class="world-globe">
@@ -595,37 +177,51 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide zx">
+                <h6>新闻资讯</h6>
+                <h3>新闻资讯</h3>
+                <h2></h2>
                 <div id="ding" class="ding">
                         01
                 </div>
                 <div id="ding2" class="ding">
                         
                 </div>
-                <div class="swiper-container3 swiper-no-swiping">
+                <div class="swiper-container3" id="no2">
                     <div class="swiper-wrapper" id="swiper-wrapper3">
-                        
+
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            <div class="swiper-slide swiper-slide_footer" >
-                    <footer>
-                        <ul class="clearfix">
-                            <li class="fl">
-                                <a href="opinion.html">意见反馈</a>
-                            </li>
-                            <li class="fl">
-                                <i>客服热线</i><span>+86 888 8888 88</span>
-                            </li>
-                            <li class="fr">
-                                客户端下载<img src="img/52.png" alt="" srcset="">
-                            </li>
-                        </ul>
-                        <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
-                    </footer>
+            <div class="swiper-slide swiper-slide_footer swiper-no-swiping" >
+                <footer>
+                    <ul class="clearfix">
+                        <li class="fl">
+                            <a href="opinion.html">意见反馈</a>
+                        </li>
+                        <li class="fl">
+                            <i>客服热线</i><span>+86 888 8888 88</span>
+                        </li>
+                        <li class="fr">
+                            客户端下载<img src="img/52.png" alt="" srcset="">
+                        </li>
+                    </ul>
+                    <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
+                </footer>
             </div>
+            <div class="swiper-slide footer swiper-no-swiping">
+                    <h1>
+                        <a href="opinion.html">意见反馈</a>
+                        <span>|</span>
+                        <a href="">客户端下载</a>
+                        <span>|</span>
+                        <i>客服热线+86 888 8888 88</i>
+                    </h1>
+                    <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+                    <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+                </div>
         </div>
         
     </div>
@@ -640,49 +236,89 @@
     <script src='js/TweenMax.min.js'></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     
+   <script>
+    function isMouseLeaveOrEnter(e, handler) {    
+        if (e.type != 'mouseout' && e.type != 'mouseover') return false;    
+         var reltg = e.relatedTarget ? e.relatedTarget : e.type == 'mouseout' ? e.toElement : e.fromElement;    
+         while (reltg && reltg != handler)    
+            reltg = reltg.parentNode;    
+         return (reltg != handler);    
+    }
+    </script>
+    <script>
+        if(document.documentElement.clientWidth<800){
+            var pc_yd='yd';
+        }else{
+            var pc_yd='pc';
+        }
+    </script>
+    <script>
+        var m_nav=document.getElementById('m_nav');
+        var m_nav2=document.getElementById('m_nav2');
+        var ce_nav=document.getElementById('ce_nav');
+        m_nav.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong';
+        };
+        m_nav2.onclick=function(){
+            ce_nav.className='ce_nav ce_nav_dong2';
+        };
+      
+    </script>
     <!-- 动画 -->
     <script>
         var ul=document.getElementById('ul');
         var QR_f=document.getElementById('QR_f');
         var oli=ul.getElementsByTagName('li');
-        var t_f=true
-        for(var i=0;i<oli.length;i++){
-            oli[i].onmouseover=function(){
-                if(t_f){
+        //var t_f=true
+        if(pc_yd=='pc'){
+            for(var i=0;i<oli.length;i++){
+                oli[i].style.background='red'
+                oli[i].onmouseover=function(ev){
+                    var ev=ev||window.event;
+                    if(!isMouseLeaveOrEnter(ev,this)){return false;}
                     var oli_i1=this.getElementsByTagName('img')[2];
                     var oli_i=this.getElementsByTagName('img')[1];
                     oli_i1.style.display='none';
                     oli_i.style.display='block';
                     oli_i.className='dong fly';
-                    t_f=false;
-                    setTimeout(function(){
-                        oli_i.className='fly';
-                        t_f=true;
-                    },800);
+                };
+                oli[i].onmouseout=function(ev)
+		        {
+                    var oli_i1=this.getElementsByTagName('img')[2];
+                    var oli_i=this.getElementsByTagName('img')[1];
+                    var ev=ev||window.event;
+                    if(!isMouseLeaveOrEnter(ev,this)){return false;}
+                    oli_i1.style.display='block';
+                    oli_i.className='fly';
                 }
-                    
-                    
             };
+            QR_f.onmouseover=function(){
+                var QR_f_p=this.getElementsByTagName('p')[0]
+                var QR_f_i=this.getElementsByTagName('img')[0]
+                this.className='dong2 QR_f'
+                QR_f_p.className='dong4'
+                QR_f_i.className='dong5'
+            };
+            QR_f.onmouseout=function(){
+                var QR_f_p=this.getElementsByTagName('p')[0]
+                var QR_f_i=this.getElementsByTagName('img')[0]
+                this.className='dong3 QR_f'
+                QR_f_p.className='dong6'
+                QR_f_i.className='dong7'
+            };
+        }else{
+            var m_img_0=oli[0].getElementsByTagName('img')[0];
+            var m_img_1=oli[1].getElementsByTagName('img')[0];
+            var m_img_2=oli[2].getElementsByTagName('img')[0];
+            m_img_0.src='img/m_s1.jpg';
+            m_img_1.src='img/m_s2.jpg';
+            m_img_2.src='img/m_s3.jpg';
         }
-        QR_f.onmouseover=function(){
-            var QR_f_p=this.getElementsByTagName('p')[0]
-            var QR_f_i=this.getElementsByTagName('img')[0]
-            this.className='dong2 QR_f'
-            QR_f_p.className='dong4'
-            QR_f_i.className='dong5'
-        };
-        QR_f.onmouseout=function(){
-            var QR_f_p=this.getElementsByTagName('p')[0]
-            var QR_f_i=this.getElementsByTagName('img')[0]
-            this.className='dong3 QR_f'
-            QR_f_p.className='dong6'
-            QR_f_i.className='dong7'
-        };
-        
-
     </script>
     <!-- 地球仪 -->
     <script>
+    if(pc_yd=='pc'){
+ 
     var config = {
         percent: 0,
         lat: 0,
@@ -1054,6 +690,7 @@
     }
     
     init();
+}
     </script>
     <!-- Swiper -->
     <script>
@@ -1062,25 +699,50 @@
         var ding2=document.getElementById('ding2');
         var down=document.getElementById('down');
         var down2=document.getElementById('down2');
+        var m_logo=document.getElementById('m_logo');
+        var m_nav_logo=m_nav.getElementsByTagName('img')[0];
+        var no_dq=document.getElementById('no_dq');
+        var no2=document.getElementById('no2');
+        
+        if(pc_yd=='pc'){
+            no_dq.className='swiper-slide swiper-no-swiping';
+            no2.className='swiper-container3 swiper-no-swiping';
+        }else{
+            no_dq.className='swiper-slide';
+            no2.className='swiper-container3';
+        }
         // 整屏滚动
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical', // 垂直切换选项
             mousewheel: true,
             speed:1000,
+            //autoplay:true,
             slidesPerView: "auto",
             on: {
                 slideChangeTransitionStart: function(){
-                    if(this.activeIndex>0){
-                        header_1.className='header' 
+                    if(pc_yd=='pc'){
+                        if(this.activeIndex>0){
+                            header_1.className='header' 
+                        }else{
+                            header_1.className='header2' 
+                        };
+                        if(this.activeIndex==1){
+                            var fly2=document.getElementsByClassName('fly2');
+                            for(var i=0;i<fly2.length;i++){
+                                fly2[i].style.display='block';
+                            }
+                        }
                     }else{
-                        header_1.className='header2' 
-                    };
-                    if(this.activeIndex==1){
-                       var fly2=document.getElementsByClassName('fly2');
-                       for(var i=0;i<fly2.length;i++){
-                         fly2[i].style.display='block';
-                       }
+                        if(this.activeIndex>0){
+                            m_logo.src='img/m_logo1.png'
+                            m_nav_logo.src='img/m_nav1.png'
+                        }else{
+                            m_logo.src='img/m_logo.png'
+                            m_nav_logo.src='img/m_nav.png'
+                        };
                     }
+                    
+                    
                     
                 },
                 slideChangeTransitionEnd: function(){
@@ -1093,7 +755,6 @@
                     }
                 }
             },
-        
         })     
         //轮播图 
         var mySwiper2 = new Swiper ('.swiper-container2', {
@@ -1109,6 +770,7 @@
             direction: 'horizontal', 
             centeredSlides: true,
             slidesPerView: "auto",
+            //autoplay:true,
             speed:500,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -1116,16 +778,17 @@
             },
             on: {
                 slideChangeTransitionStart: function(){
-                    if(this.activeIndex>0){
-                        ding.style.display='none';
-                        ding2.style.display='block';
-                        var num=this.activeIndex+1
-                        ding2.innerHTML='0'+num
-                    }else{
-                        ding.style.display='block';
-                        ding2.style.display='none';
+                    if(pc_yd=='pc'){
+                        if(this.activeIndex>0){
+                            ding.style.display='none';
+                            ding2.style.display='block';
+                            var num=this.activeIndex+1
+                            ding2.innerHTML='0'+num
+                        }else{
+                            ding.style.display='block';
+                            ding2.style.display='none';
+                        }
                     }
-                    
                 },
             },
         }) 
@@ -1167,11 +830,15 @@
                 success: function (data)
                 {
                    for(var i=0;i<data.length;i++){
-                        var datas='<div class="swiper-slide" style="background:url('+data[i].img+') center no-repeat;background-size: 100% 100%;"><h2></h2><h1>'+data[i].title+'</h1></div>'
+                       if(pc_yd=='pc'){
+                            var datas='<div class="swiper-slide" style="background:url('+data[i].img+') center no-repeat;background-size: 100% 100%;"><h5></h5><h1>'+data[i].title+'</h1></div>'
+                       }else{
+                            var datas='<div class="swiper-slide"><img src="'+data[i].img+'" alt=""><p>'+data[i].title+'</p><div class="clearfix"><i class="fl">'+data[i].date+'</i><a href="javascript:;" class="fr">查看详情</a></div></div>'
+                       }
                         mySwiper3.appendSlide(datas)
                     }
                     var swiper_container3=document.getElementById('swiper-wrapper3');
-                    var sss3=swiper_container3.getElementsByTagName('div')
+                    var sss3=swiper_container3.getElementsByClassName('swiper-slide');
                     for(var i=0;i<sss3.length;i++){
                         sss3[i].new_id=data[i].id
                         sss3[i].onclick=function(){

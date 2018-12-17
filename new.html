@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>新闻</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -196,11 +197,22 @@
                     creat(data.arr)
                     var num=data.alldata;
                     if(pc_yd=='yd'){
-                        var pageAmount=3;
-                        var pageTotal=Number(((num/3)+'').split('.')[0])+1;
+                        var pageAmount=3
+                        var len=((num/3)+'').split('.').length
+                        if(len>1){
+                            var pageTotal=Number(((num/3)+'').split('.')[0])+1
+                        }else{
+                            var pageTotal=Number(((num/3)+'').split('.')[0])
+                        }
+                        
                     }else{
-                        var pageAmount=5;
-                        var pageTotal=Number(((num/5)+'').split('.')[0])+1;
+                        var pageAmount=5
+                        var len=((num/5)+'').split('.').length
+                        if(len>1){
+                            var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                        }else{
+                            var pageTotal=Number(((num/5)+'').split('.')[0])
+                        }
                     }
                     new Page({
                         id: 'pagination',
@@ -249,13 +261,23 @@
                     var num=data.alldata;
                     if(pc_yd=='yd'){
                         var pageAmount=3
-                        var pageTotal=Number(((num/3)+'').split('.')[0])+1
+                        var len=((num/3)+'').split('.').length
+                        if(len>1){
+                            var pageTotal=Number(((num/3)+'').split('.')[0])+1
+                        }else{
+                            var pageTotal=Number(((num/3)+'').split('.')[0])
+                        }
+                        
                     }else{
                         var pageAmount=5
-                        var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                        var len=((num/5)+'').split('.').length
+                        if(len>1){
+                            var pageTotal=Number(((num/5)+'').split('.')[0])+1
+                        }else{
+                            var pageTotal=Number(((num/5)+'').split('.')[0])
+                        }
                     }
                     creat2(data.arr)
-                    
                     new Page({
                         id: 'pagination2',
                         pageTotal: pageTotal, //必填,总页数
@@ -279,7 +301,6 @@
                                 dataType:'json',
                                 success: function (data)
                                 {
-                                    console.log(data)
                                     creat2(data.arr)
                                 }
                             })

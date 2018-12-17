@@ -57,6 +57,10 @@
         font-size: 26px;
         line-height: 30px;
     }
+    #box .con1 h3 b{
+        color: #5885ee;
+        font-weight: normal;
+    }
     #box .con1 span{
         display: block;
         font-size: 14px;
@@ -129,6 +133,10 @@
         line-height: 17px;
         margin-bottom: 7px;
         cursor: pointer;
+    }
+    #box .con .con1_r li b{
+        font-weight: normal;
+        color: #5885ee;
     }
     #box .con .con1_r i{
         display: block;
@@ -232,6 +240,10 @@
         text-align: justify;
         letter-spacing: 1px;
     }
+    #box .con1 h3 b{
+        font-weight: normal;
+        color: #5885ee;
+    }
     #box .con1 span{
         display: block;
         width: 18.4rem;
@@ -331,6 +343,10 @@
         overflow: hidden;
         color: #606060;
     }
+    #box .con1_r li .bjc h1 b{
+        font-weight: normal;
+        color: #5885ee;
+    }
     #box .con1_r li .bjc i{
         font-size: 0.64rem;
         display: block;
@@ -339,7 +355,10 @@
         margin-top: 1.06rem;
     }
     #box .pagination{
-        width: 12.48rem;
-        margin: 0 auto;
+        margin-left: 3rem;
+    }
+    #box #xg,#box #hot{
+        height: 16.37333rem;
+        margin-bottom: 1.6rem;
     }
 }

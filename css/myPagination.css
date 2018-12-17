@@ -29,18 +29,14 @@
     }
     
     #box #pagination ul li:hover {
-        transform: scale(1.1);
-        background-color: #F4F6F8;
     }
     
     #box #pagination  li.active {
         background: #98A6AD;
-        color: white;
-        cursor: not-allowed;
     }
     
     #box #pagination li.disabled {
-        cursor: not-allowed;
+        opacity: 0.6;
     }
     #box #pagination li.totalPage {
         background: transparent;
@@ -51,7 +47,6 @@
     
     #box #pagination li.totalPage:hover {
         transform: none;
-        background-color: #ffffff;
     }
     
     
@@ -122,18 +117,15 @@
     }
     
     #box #pagination2 ul li:hover {
-        transform: scale(1.1);
-        background-color: #F4F6F8;
     }
     
     #box #pagination2  li.active {
         background: #98A6AD;
         color: white;
-        cursor: not-allowed;
     }
     
     #box #pagination2 li.disabled {
-        cursor: not-allowed;
+        opacity: 0.6;
     }
     #box #pagination2 li.totalPage {
         background: transparent;
@@ -143,8 +135,6 @@
     }
     
     #box #pagination2 li.totalPage:hover {
-        transform: none;
-        background-color: #ffffff;
     }
     
     
@@ -204,18 +194,15 @@
     }
     
     #box #pagination ul li:hover {
-        transform: scale(1.1);
-        background-color: #F4F6F8;
     }
     
     #box #pagination  li.active {
         background: #98A6AD;
         color: white;
-        cursor: not-allowed;
     }
     
     #box #pagination li.disabled {
-        cursor: not-allowed;
+        opacity: 0.6;
     }
     #box #pagination li.totalPage {
         background: transparent;
@@ -225,8 +212,6 @@
     }
     
     #box #pagination li.totalPage:hover {
-        transform: none;
-        background-color: #ffffff;
     }
     
     
@@ -292,18 +277,15 @@
     }
     
     #box #pagination2 ul li:hover {
-        transform: scale(1.1);
-        background-color: #F4F6F8;
     }
     
     #box #pagination2  li.active {
         background: #98A6AD;
         color: white;
-        cursor: not-allowed;
     }
     
     #box #pagination2 li.disabled {
-        cursor: not-allowed;
+        opacity: 0.6;
     }
     #box #pagination2 li.totalPage {
         background: transparent;
@@ -314,7 +296,6 @@
     
     #box #pagination2 li.totalPage:hover {
         transform: none;
-        background-color: #ffffff;
     }
     
     

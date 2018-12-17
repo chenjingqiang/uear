@@ -1,0 +1,485 @@
+@media screen and (min-width: 800px) {
+    html,body,#box{
+        height: 100%;
+        min-width: 1500px;
+    }
+    #box .ce_nav{
+        display: none;
+    }
+    #box .m_con{
+        display: none;
+    }
+    #box .m_con1_r {
+        display: none;
+    }
+    #box header{
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color:rgba(0,0,0,0.3);
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    #box .down{
+        width: 40px;
+        position: fixed;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 40px;
+        z-index: 1;
+    }
+    #box .down2{
+        width: 40px;
+        position: fixed;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 40px;
+        display: none;            
+    }
+    #box .con1 {
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+    #box .con1 .bj{
+        width: 100%;
+        height: 100%;
+        min-width: 1200px;
+    }
+    #box .con1 .con1_1{
+        width: 100%;
+        height: 100%;
+    } 
+    
+    #box .con1 .pos{
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        text-align: center;
+    }
+    #box .con1 h1{
+        width: 100%;
+        font-size: 58px;
+        height: 90px;
+        line-height: 90px;
+    }
+    #box .con1 h2{
+        width: 100%;
+        font-size: 28px;
+        height: 45px;
+        line-height: 45px;
+        margin-bottom: 60px;
+        left: 0;
+    }
+    #box .con1 .btn{
+        display: block;
+        margin: 0 auto;
+        width: 287px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 20px;
+        background: #5885EE;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    @keyframes bot_str
+    {
+        0% {height: 50px;}
+        100% {height: 150px;}
+    }
+    @keyframes bot_end
+    {
+        0% {height: 150px;}
+        100% {height: 50px;}
+    }
+    @keyframes bot_str2
+    {
+        0% {margin-left: 0px;}
+        100% {margin-left: -60px;}
+    }
+    @keyframes bot_end2
+    {
+        0% {margin-left: -60px;}
+        100% {margin-left: 0px;}
+    }
+    @keyframes bot_str3
+    {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+    }
+    @keyframes bot_end3
+    {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    #box .con1 .QR_f{
+        width: 148px;
+        height: 50px;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: left;
+        margin-top: 50px;
+        text-align: center;
+        box-shadow: #ccc 0px 0px 1px 1px;
+        padding-top: 4px;
+        cursor: pointer;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        margin-left: -74px;
+        z-index: 11;
+    }
+    #box .con1 .dong2{
+        animation:bot_str 0.5s forwards ;
+    }
+    #box .con1 .dong3{
+        animation:bot_end 0.5s forwards ;
+    }
+    #box .con1 .QR_f p{
+        line-height: 40px;
+        font-size: 16px;
+    }
+    #box .con1 .QR_f p i{
+        margin-left: 10px;
+        opacity: 0.8;
+    }
+    #box .con1 .QR_f .dong4{
+        animation:bot_str2 0.5s forwards ;
+    }
+    #box .con1 .QR_f .dong5{
+        animation:bot_str3 0.5s forwards ;
+    }
+    #box .con1 .QR_f .dong6{
+        animation:bot_end2 0.5s forwards ;
+    }
+    #box .con1 .QR_f .dong7{
+        animation:bot_end3 0.5s forwards ;
+    }
+    #box .con1 .QR_f .qr_small{
+        width: 40px;
+        height: 40px;
+    }
+    #box .con1 .QR{
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+    }
+    #box .con1 .Mask{
+        width: 100%;
+        height: 40px;
+        background-color:rgba(0,0,0,0.3);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+        z-index: 10;
+    }
+    #box .con1 .Mask .cen{
+        margin: 0 auto;
+        width: 1200px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    #box .swiper-container4{
+        height: 40px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    #box .con1 .Mask .cen span{
+        width: 47px;
+        height: 18px;
+        background: #E76F00;
+        text-align: center;
+        line-height: 18px;
+        border-radius: 4px;
+        margin-top:11px;
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    #box .con2{
+        width: 100%;
+        overflow: hidden;
+    }
+    #box .con2 h3{
+        font-size: 30px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 10px;
+        color: #132550;
+    }
+    #box .con2 h2{
+        width:36px;
+        height:1px;
+        border:3px solid #132550;
+        margin: 0 auto;
+        margin-bottom: 4%;
+    }
+    #box .con2 ul{
+        width: 100%; 
+    }
+    #box .con2 li{
+        width: 33.333333333%;
+        float: left;
+        position: relative;
+    }
+    #box .con2 div{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: #fff;
+    }
+    #box .con2 div h1{
+        width: 100%;
+        font-size: 38px;
+        color: #fff;
+        text-align: center;
+        margin-top: 36%;
+        margin-bottom: 4%;
+    }
+    #box .con2 div p{
+        width: 40%;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 24px;
+        opacity: 0.8;
+    }
+    /* 旋转 */
+    @keyframes myfirst
+    {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+    }
+    /* 下滑 */
+    
+    #box .con2 li .b_i{
+        width: 100%;
+    }
+    #box .con2 li .dong{
+        animation:myfirst 0.8s linear;
+    }
+    #box .con2 li .fly{ 
+        width: 51%;
+        height: 62%;
+        position: absolute;
+        top: 26%;
+        left: 25%;
+    }
+    #box .con3{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    #box .con3 h6{
+        display: none;
+    }
+    #box .con3 .dq,#box .con3 .yy{
+        display: none;
+    }
+    #box .zx h6{
+        display: none;
+    }
+    #box .zx h3{
+        font-size: 30px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 10px;
+        color: #132550;
+    }
+    #box .zx h2{
+        width:36px;
+        height:1px;
+        border:3px solid #132550;
+        margin: 0 auto;
+        margin-bottom: 4%;
+    }
+    .world {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        cursor: move;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+    .world-bg {
+        position: absolute;
+        width: 100%;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    .world-globe {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 0;
+    }
+    .world-globe-pole {
+        position: absolute;
+        width: 530px;
+        height: 530px;
+        left: -265px;
+        top: -265px;
+        border-radius: 50% 50%;
+    }
+    .world-globe-doms-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 0;
+    }
+    .world-globe-halo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 730px;
+        height: 715px;
+        margin-left: -368px;
+        margin-top: -350px;
+    }
+    #box .con3 .con3_1{
+        width: 1200px;
+        margin: 0 auto;
+        color: #8095C7;
+    }
+    #box .con3 .con3_1 h1{
+        margin-top: 15%;
+        margin-bottom: 3%;
+        font-size: 30px;
+        color: #132550;
+    }
+    #box .con3 .con3_1 p{
+        width: 236px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    #box .con3 .yin{
+        display: block;
+        margin: 0 auto;
+        width: 530px;
+        margin-top: 21%;
+    }
+    .swiper-container,.swiper-container2,.swiper-container3{
+        width: 100%;
+        height: 100%;
+    }
+    #box .zx{
+        max-width: 1920px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+    }
+    .swiper-container2 .swiper-slide1{
+        background: url(../img/bj.jpg) center no-repeat;
+        background-size:cover;
+    }
+    .swiper-container2 .swiper-slide2{
+        background: url(../img/bj2.jpg) center no-repeat;
+        background-size:cover;
+    }
+    .swiper-container2 .swiper-slide3{
+        background: url(../img/bj3.jpg) center no-repeat;
+        background-size:cover;
+    }
+    /* .swiper-container3 .swiper-wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    } */
+    .swiper-container3 .swiper-wrapper{
+        width: 100%;
+    }
+    .swiper-container3 .swiper-wrapper .swiper-slide{
+        width: 38%;
+        padding-bottom: 21.6%;
+        height: 0;
+        margin-left: 6%;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+    }
+    .swiper-container3 h5{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        background:rgba(0,0,0,0.5);
+    }
+    .swiper-container3 h1{
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+        margin-top: 26%;
+    }
+    .swiper-container3  .swiper-button-prev{
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background:url(../img/pr.png) center no-repeat;
+        background-size: 100% 100%;
+        top: 79%;
+        left: 7%;
+        outline: none; 
+    }
+    .swiper-container3  .swiper-button-next{
+        width: 78px;
+        height: 78px;
+        background:url(../img/ne.png) center no-repeat;
+        background-size: 100% 100%;
+        top: 79%;
+        left: 16%;
+        outline: none; 
+    }
+    .swiper-container3  .swiper-button-prev:hover{
+        width: 78px;
+        height: 78px;
+        background:url(../img/pr2.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+    .swiper-container3  .swiper-button-next:hover{
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        background:url(../img/ne2.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+    #box .ding{
+        position: absolute;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background: #5885EE;
+        text-align: center;
+        line-height: 66px;
+        top: 40%;
+        color: #fff;
+        font-size: 16px;
+        z-index: 10;
+    }
+    #ding{
+        left: 16%;
+    }
+    #ding2{
+        left: 32.2%;
+        display: none;
+    }
+    #box .world{
+        background:rgba(88,133,238,0.04);
+    }
+}
