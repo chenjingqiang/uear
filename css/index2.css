@@ -267,17 +267,15 @@
         text-align: left;
         margin-top: 3rem;
         font-weight: bold;
-        margin-left: 0.8rem;
-        margin-bottom: 2rem;
         text-align: center;
     }
     #box .con2 h2{
-        display: none;
-        width:36px;
-        height:1px;
-        border:3px solid #132550;
+        width:1.6rem;
+        height:0.16rem;
+        background: #132550;
         margin: 0 auto;
-        margin-bottom: 130px;
+        margin-top: 0.5333rem;
+        margin-bottom: 2.13333rem;
     }
     #box .con2 ul{
         width: 100%; 
@@ -345,6 +343,14 @@
     #box .world{
         display: none;
     }
+    #box .con3 h2{
+        width:1.6rem;
+        height:0.16rem;
+        background: #132550;
+        margin: 0 auto;
+        margin-top: 0.5333rem;
+        margin-bottom: 2.66666rem;
+    }
     #box .con3 .con3_1{
         color: #8095C7;
     }
@@ -356,8 +362,6 @@
         color: rgba(0,0,0,0.80);
         letter-spacing: 0.26px;
         margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-left: 0.8rem;
         font-weight: bold;
         text-align: center;
     }
@@ -397,13 +401,19 @@
         height: 150%;
         background:rgba(0,0,0,0.5);
     }
-    #box .zx h6{
+    #box .zx h3{
         margin-top: 4.2666rem;
         font-size: 0.96rem;
         color: rgba(0,0,0,0.80);
         font-weight: bold;
-        margin-left: 0.8rem;
         text-align: center;
+    }
+    #box .zx h2{
+        width:1.6rem;
+        height:0.16rem;
+        background: #132550;
+        margin: 0 auto;
+        margin-top: 0.5333rem;
     }
     .swiper-container3 .swiper-slide{
         width: 100%;
@@ -454,7 +464,7 @@
         background:url(../img/m_pr.png) center no-repeat;
         background-size: 100% 100%;
         outline: none; 
-        top: 46%;
+        top: 48%;
     }
     .swiper-container3  .swiper-button-next{
         width: 0.373333rem;
@@ -462,18 +472,13 @@
         background:url(../img/m_ne.png) center no-repeat;
         background-size: 100% 100%;
         outline: none; 
-        top: 46%;
+        top: 48%;
     }
     #box .footer{
         position: relative;
         height: 100px;
         background: #fff;
         z-index: 9;
-    }
-    #box .swiper-slide{
-    }
-    #box .zx h2,#box .zx h3{
-        display: none;
     }
 }
 @media (max-height:560px){ 

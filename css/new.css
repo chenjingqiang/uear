@@ -2,6 +2,13 @@
     html,body,#box{
         height: 100%;
     }
+    #box #xg_f{
+        position: fixed;
+    }
+    #box #hot_f{
+        position: fixed;
+        top: 383px;
+    }
     #box .ce_nav{
         display: none;
     }
@@ -36,8 +43,7 @@
     }
     #box .con{
         width: 100%;
-        background: url(../img/new.jpg) center no-repeat;
-        background-size: 100% 100%;
+        background: url(../img/new.jpg);
         padding-top: 14px;
         padding-bottom: 40px;
     }
@@ -79,6 +85,7 @@
     #box #con1_l img{
         width: 100%;
         margin: 20px 0;
+        margin-left: -2em;
     }
     #box .con .con1_l{
         width: 938px;
@@ -302,7 +309,8 @@
         margin: 0 auto;
     }
     #box .m_con1_r {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid #ebebeb;
     }
     #box .m_con1_r a{
         float: left;
@@ -323,25 +331,27 @@
         color: #333333;
     }
     #box .con1_r li {
-        margin-bottom: 1.76rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ebebeb;
     }
     #box .con1_r li .b_j{
         float: left;
-        width: 4.2666rem;
-        height: 4.2666rem;
+        width: 5.333rem;
+        height: 3.0933333rem;
         background: url(../img/bj.jpg) no-repeat center;
         background-size:cover;
     }
     #box .con1_r li .bjc{
-        width: 13.0666rem;
+        width: 12.6rem;
         height: 4.2666rem;
     }
     #box .con1_r li .bjc h1{
-        font-size: 0.8533rem;
+        font-size: 0.7466rem;
         display: block;
-        height: 2.34666rem;
+        height: 2.3rem;
         overflow: hidden;
         color: #606060;
+        line-height: 1rem;
     }
     #box .con1_r li .bjc h1 b{
         font-weight: normal;
@@ -352,7 +362,7 @@
         display: block;
         color: #989C9F;
         letter-spacing: 1.39px; 
-        margin-top: 1.06rem;
+        padding-left: 0.3rem;
     }
     #box .pagination{
         margin-left: 3rem;

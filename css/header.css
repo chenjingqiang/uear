@@ -110,4 +110,18 @@
         display: none;
         cursor: pointer;
     }
+    /* #box .back_f{
+        width: 1200px;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 50%;;
+        margin-left: -600px;
+        text-align: right;
+        top: 800px;
+    }
+    #box #back{
+      float: right;
+      margin-right: -38px;
+    } */
 }
