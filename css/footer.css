@@ -19,18 +19,25 @@
         height: 52px;
         font-size: 18px;
         line-height: 52px;
-        color: #5B6C86;
+        color: #4B8FEA;
+    }
+    #box footer li span{
+        color: #666;
+    }
+    #box footer li a{
+        color: #4B8FEA;
     }
     #box footer li a:hover{
-        color: #666;
+        color: #4B8FEA;
     }
     #box footer li i{
         color: #4B8FEA;
-        margin-left: 370px;
+        margin-left: 230px;
     }
     #box footer li span{
         font-size: 14px;
         margin-left: 15px;
+        letter-spacing: 2px;
     }
     #box footer li img{
         width: 52px;
@@ -56,6 +63,9 @@
         text-align:  center;
         height: 1.38666rem;
         line-height: 1.38666rem;
+    }
+    #box .footer .yx{
+        margin-bottom: 0.8rem;
     }
     #box .footer a,#box .footer i{
         font-size: 0.64rem;

@@ -48,12 +48,13 @@
         position: relative;;
         width: 1200px;
         margin: 0 auto;
-        height: 580px;
+        /* height: 580px; */
         margin-top: -36px;
         z-index: 10;
         background: #fff;
         box-shadow: 0px 0.5px 0.5px 0px rgba(0,0,0,0.2);
         margin-bottom: 36px;
+        height: 736px;
     }
     #box .con2_l{
         width: 262px;
@@ -87,6 +88,39 @@
         line-height:30px;
         letter-spacing:1px;
         text-align:justify;
+    }
+    #box .con2_r ul{
+        border-top:1px solid #d8d8d8; 
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+    #box .con2_r ul li{
+        float: left;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 2.16px;
+        margin-bottom: 15px;
+        width: 389px;
+        height: 20px;
+    }
+    #box .con2_r ul .ffr{
+        float: right;
+        width: 221px;
+    }
+    #box .con2_r ul li img{
+        width: 20px;
+        height: 20px;
+    }
+    #container{
+        width: 100%;
+        height: 336px;
+    }
+    .amap-logo,.amap-copyright{
+        z-index: -10;
+    }
+    .amap-icon img{
+        width: 25px;
+        height: 34px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -204,5 +238,25 @@
         color: #474747;
         letter-spacing: 1px;
         line-height: 1.6rem;
+    }
+    #box .m_con2 ul{
+        border-top: 1px solid #d8d8d8;
+        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+        overflow: hidden;
+    }
+    #box .m_con2 ul li{
+        font-size: 0.6933rem;
+        color: #333333;
+        margin-bottom: 0.74666rem;
+        height:1.066rem;
+        line-height: 1.066rem;
+    }
+    #box .m_con2 ul li img{
+        width: 1.066rem;
+    }
+    #box .m_con2 .m_ditu{
+        width: 100%;
+        margin-top: 0.53333rem;
     }
 }
