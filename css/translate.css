@@ -37,10 +37,164 @@
         line-height: 56px;
     }
     #box .con p{
-        font-size: 24px;
-        height: 33px;
-        line-height: 33px;
-        margin-top: 6px;
+        font-size: 16px;
+        color: #CCCCCC;
+        letter-spacing: 0.53px;
+        text-align: center;
+        margin-top: 44px;
+        margin-bottom: 14px;
+    }
+    #box .con a{
+        display: block;
+        width: 160px;
+        height: 52px;
+        background: #5885EE;
+        border-radius: 6px;
+        color: #FFFFFF;
+        letter-spacing: 0.09px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #box #zhezhao{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: 100;
+        display: none;
+    }
+    #box #zhezhao div{
+        width: 570px;
+        height: 487px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -285px;
+        margin-top: -243px;
+        position: relative;
+        padding-top: 40px;
+    }
+    #box #zhezhao div img{
+        position: absolute;
+        width: 36px;
+        bottom: -77px; 
+        left: 50%;
+        margin-left: -18px;
+        cursor: pointer;
+    }
+    #box #zhezhao div h1{
+        font-size: 18px;
+        color: #333333;
+        letter-spacing: 1.5px;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 30px;
+        margin-bottom: 87px;
+    }
+    #box #zhezhao .ale2 h1{
+        margin-bottom: 40px;
+    }
+    #box #zhezhao div p{
+        font-size: 18px;
+        color: #333333;
+        letter-spacing: 0.9px;
+        font-weight: bold;
+        margin-left: 45px;
+    }
+    #box #zhezhao div input{
+        width: 480px;
+        height: 60px;
+        background: #e4e4e4;
+        margin-left: 45px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        text-align: center;
+    }
+    #box #zhezhao .ale2 input{
+        margin-bottom: 20px;
+    }
+    #box #zhezhao div a{
+        display: block;
+        width: 200px;
+        height: 52px;
+        background: #5885EE;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 1.5px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 90px;
+        line-height: 52px;
+        border-radius: 6px;
+    }
+    #box #zhezhao .ale2 a{
+        margin-top: 40px;
+    }
+    #box #zhezhao div i{
+        display: block;
+        font-size: 12px;
+        color: #DC302E;
+        letter-spacing: 0.6px;
+        text-align: right;
+        margin-right: 45px;
+        height: 12px;
+        opacity: 0;
+    }
+    #box #zhezhao div i img{
+        width: 12px;
+        height: 12px;
+        position: static;
+        cursor:default;
+        margin-right: 5px;
+        margin-top: -3px;
+    }
+    #box #zhezhao .ale2 span{
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background: url(../img/ok.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box #zhezhao .ale2 b{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: #111111;
+        letter-spacing: 0.6px;
+        margin-top: 19px;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+    #box #zhezhao .ale2 em{
+        display: block;
+        width: 450px;
+        margin: 0 auto;
+        height: 40px;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.47px;
+        text-align: center;
+    }
+    #box #zhezhao #h3_nok span{
+        background: url(../img/n_ok.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .con a i{
+        float: left;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    #box .con a img{
+        float: left;
+        width: 15px;
+        margin-left: 31px;
+        margin-right: 12px;
+        margin-top: 17px;
     }
     #box .con2{
         width: 100%;
@@ -72,13 +226,40 @@
         text-align: center;
         color: #fff;
         font-size: 1.0666rem;
-        margin-top: 0.8rem;
-        margin-bottom: 0.2133rem;
+        margin-top: 0.64rem;
+        margin-bottom: 0.64rem;
     }
-    #box .m_con p{
-        text-align: center;
-        color: #fff;
-       
+    #box .m_con p em{
+        float: left;
+        font-size: 0.64rem;
+        color: #CCCCCC;
+        letter-spacing: 0.4px;
+        margin-left: 4.48rem;
+        margin-right: 0.53333rem;
+        height: 1.333rem;
+        line-height: 1.333rem;
+    }
+    #box .m_con p a{
+        float: left;
+        width: 3.2rem;
+        height: 1.333rem;
+        border-radius: 4px;
+        background: #5885EE;
+    }
+    #box .m_con p a img{
+        float: left;
+        width: 0.3733rem;
+        margin-left: 0.58666rem;
+        margin-right: 0.32rem;;
+        margin-top: 0.48rem;
+    }
+    #box .m_con p a i{
+        float: left;
+        height: 1.333rem;
+        font-size: 0.64rem;
+        color: #FFFFFF;
+        letter-spacing: 0.06px;
+        line-height: 1.333rem;
     }
     @keyframes ce_nav_sta
     {
@@ -136,5 +317,148 @@
     #box .lc{
         width: 13.8133rem;
         margin: 0 auto;
+    }
+    #box #zhezhao{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: 100;
+        display: none;
+    }
+    #box #zhezhao div{
+        width: 17.866rem;
+        height: 20.6933rem;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -8.9066rem;
+        margin-top: -11.1466rem;
+        position: relative;
+        padding-top: 1.6rem;
+    }
+    #box #zhezhao div img{
+        position: absolute;
+        width: 1.6rem;
+        bottom: -3.41333rem; 
+        left: 50%;
+        margin-left: -0.8rem;
+        cursor: pointer;
+    }
+    #box #zhezhao div h1{
+        font-size: 0.8533rem;
+        color: #333333;
+        letter-spacing: 1.33px;
+        text-align: center;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding: 0 1.226rem;
+        padding-bottom: 1.013333rem;
+        margin-bottom: 3.52rem;
+        line-height: 1.173rem;
+    }
+    #box #zhezhao .ale2 h1{
+        margin-bottom: 1.5466rem;
+    }
+    #box #zhezhao div p{
+        width: 15.73333rem;
+        margin: 0 auto;
+        font-size: 0.85333rem;
+        color: #333333;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+    }
+    #box #zhezhao div input{
+        display: block;
+        width: 15.73333rem;
+        height: 2.13333rem;
+        background: #e4e4e4;
+        margin: 0 auto;
+        margin-top: 0.53333rem;
+        margin-bottom: 0.53333rem;
+        text-align: center;
+        font-size: 0.7466rem;
+        color: #666666;
+        letter-spacing: 1.17px;
+        text-align: center;
+    }
+    #box #zhezhao .ale2 input{
+        margin-bottom: 1.066rem;
+    }
+    #box #zhezhao #data_date{
+        margin-bottom: 2.13333rem;
+    }
+    
+    #box #zhezhao div a{
+        display: block;
+        width: 10.6666rem;
+        height: 2.13333rem;
+        background: #5885EE;
+        font-size: 0.853rem;
+        color: #FFFFFF;
+        letter-spacing: 1.33px;
+        text-align: center;
+        margin: 0 auto;
+        /* margin-top: 3.30666rem; */
+        line-height: 2.1333rem;
+        border-radius: 6px;
+    }
+    #box #zhezhao .ale2 a{
+        /* margin-top: 1.7rem; */
+    }
+    #box #zhezhao div i{
+        width: 15.7333rem;
+        display: block;
+        font-size: 0.64rem;
+        color: #DC302E;
+        letter-spacing: 0.6px;
+        margin: 0 auto;
+        height: 0.64rem;
+        opacity: 0;
+        margin-bottom: 3.65rem;
+    }
+    
+    #box #zhezhao div i img{
+        width: 0.64rem;
+        height: 0.64rem;
+        position: static;
+        cursor:default;
+        margin-right: 0.26666rem;
+        margin-left: 0;
+    }
+    #box #zhezhao .ale2 span{
+        display: block;
+        width: 3.73333rem;
+        height: 3.73333rem;
+        margin: 0 auto;
+        background: url(../img/ok.png) no-repeat center;
+        background-size: 100% 100%;
+        margin-top: 1.94rem;
+    }
+    #box #zhezhao .ale2 b{
+        display: block;
+        text-align: center;
+        font-size: 0.96rem;
+        color: #111111;
+        letter-spacing: 0.6px;
+        margin-top: 1.6rem;
+        margin-bottom: 0.5333rem;
+        font-weight: normal;
+    }
+    #box #zhezhao .ale2 em{
+        display: block;
+        width: 15.7333rem;
+        margin: 0 auto;
+        height: 1.92rem;
+        font-size: 0.69333rem;
+        color: #333333;
+        letter-spacing: 0.47px;
+        text-align: center;
+        margin-bottom: 1.28rem;
+    }
+    #box #zhezhao #h3_nok span{
+        background: url(../img/n_ok.png) no-repeat center;
+        background-size: 100% 100%;
     }
 }

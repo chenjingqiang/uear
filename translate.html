@@ -14,6 +14,37 @@
 </head>
 <body>
     <div id="box">
+        <div id="zhezhao">
+            <div id="zz_a">
+                <h1>翻译官认证考试时间查询，输入手机号即可查询</h1>
+                <p>手机号</p>
+                <input type="text" placeholder="请输入您的手机号码" id="phone">
+                <i id="state"><img src="img/icc.png" alt="" srcset=""></i>
+                <a href="javascript:;" id="sub">查询</a>
+                <img src="img/close.png" alt="" id="close">
+            </div>
+            <div class="ale2" id="zz_b" >
+                <h1>尊敬的用户您好，以下是您的查询结果</h1>
+                <h2 id="h3_time" style="display: none">
+                    <p>手机号</p>
+                    <input type="text" readonly="readonly" id="data_phone">
+                    <p>考核时间</p>
+                    <input type="text" readonly="readonly" id="data_date">
+                </h2>
+                <h3 id="h3_ok" style="display: none;">
+                    <span></span>
+                    <b>审核通过</b>
+                    <em>恭喜您成为我们的翻译官，可以接单赚钱啦</em>
+                </h3>
+                <h3 id="h3_nok"  style="display: none;">
+                    <span></span>
+                    <b>审核失败</b>
+                    <em>对不起，您没有通过审核，请准备充分后到APP“我的-成为翻译官”中重新发起</em>
+                </h3>
+                <a href="javascript:;" id="close3">知道了</a>
+                <img src="img/close.png" alt="" id="close2">
+            </div>
+        </div>
         <header>
             <nav class="clearfix">
                 <a href="index.html" class="fl logo"></a>
@@ -51,16 +82,24 @@
             <h1>
                 翻译官认证流程
             </h1>
-            <p>Certification process</p>
+            <p>
+                <em>翻译官认证考试时间查询</em>
+                <a href="javascript:;" id="open2">
+                    <img src="img/sousuo.png" alt="">
+                    <i>查询</i>
+                </a>
+            </p>
         </div>
-        
         <div class="con">
             <img src="img/translate.png" alt="">
             <div>
                 <h1>翻译官认证流程</h1>
-                <p>Certification process</p>
+                <p>翻译官认证考试时间查询</p>
+                <a href="javascript:;" id="open">
+                    <img src="img/sousuo.png" alt="">
+                    <i>点击查询</i>
+                </a>
             </div>
-            
         </div>
         <div class="con2" id="con2">
             <img src="img/translate_con.png" alt="" class="lc">
@@ -102,6 +141,8 @@
         <img src="img/back.png" alt="" srcset="" id="back">
         
     </div>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/back.js"></script>
     <script>
         var m_nav=document.getElementById('m_nav');
@@ -118,6 +159,79 @@
         m_nav2.onclick=function(){
             ce_nav.className='ce_nav ce_nav_dong2';
         };
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#open').click(function(){
+                $('#zhezhao').css('display','block'); 
+                $('#zz_a').css('display','block');  
+                $('#zz_b').css('display','none');  
+                $('#state').css('opacity','0');
+                $('#phone').val('');
+            });
+            $('#open2').click(function(){
+                $('#zhezhao').css('display','block'); 
+                $('#zz_a').css('display','block');  
+                $('#zz_b').css('display','none');  
+                $('#state').css('opacity','0');
+                $('#phone').val('');
+            });
+            $('#close').click(function(){
+                $('#zhezhao').css('display','none');  
+            });
+            $('#close2').click(function(){
+                $('#zhezhao').css('display','none');  
+            });
+            $('#close3').click(function(){
+                $('#zhezhao').css('display','none');  
+            });
+            $('#sub').click(function(){
+                $('#h3_ok').css('display','none'); 
+                $('#h3_nok').css('display','none');  
+                $('#h3_time').css('display','none');   
+                if($('#phone').val()==''){
+                    $('#state').html('<img src="img/icc.png" alt="" srcset="">您的手机号有误');
+                    $('#state').css('opacity','1')
+                    return;
+                };
+                var ret = /^1[34578]\d{9}$/;
+                if(!ret.test($('#phone').val())){
+                    $('#state').html('<img src="img/icc.png" alt="" srcset="">您的手机号有误');
+                   $('#state').css('opacity','1')
+                    return;
+                };
+                var cellphone=$('#phone').val();
+                $.ajax({
+                    type: "post",
+                    url: 'http://39.105.114.96/admin/ajax/select_result.php',
+                    data:{
+                        'cellphone':cellphone
+                    },
+                    async : true,
+                    dataType:'json',
+                    success: function (data)
+                    {
+                        //console.log(data)
+                        if(data.code==1){
+                            $('#zz_a').css('display','none');  
+                            $('#zz_b').css('display','block');
+                            if(data.result==0){
+                                $('#h3_nok').css('display','block'); 
+                            }else if(data.result==1){
+                                $('#h3_ok').css('display','block'); 
+                            }else if(data.result==2){
+                                $('#data_phone').val(cellphone);  
+                                $('#data_date').val(data.datetime); 
+                                $('#h3_time').css('display','block');
+                            }
+                        }else{
+                            $('#state').html('<img src="img/icc.png" alt="" srcset="">您的手机号还没有认证哦，到APP进行翻译官认证吧~！');
+                            $('#state').css('opacity','1')
+                        };
+                    },
+                });
+            })
+        })
     </script>
 </body>
 </html>

@@ -1,0 +1,183 @@
+﻿@charset "utf-8";
+@media screen and (min-width: 800px) {
+
+	#box  #swiper-container10{
+		display: none;
+	}
+#box .banner .swiper {
+	width:1350px;
+	height: 600px;
+	margin:0 auto;
+	position:relative;
+}
+#box .banner .current-swiper {
+	width:900px;
+	height:600px;
+	border-radius:10px;
+	margin:0 auto;
+	position:relative;
+	z-index: 99;
+	overflow: hidden;
+}
+#box .con2 h5{
+	height: 600px;
+	width: 900px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+	box-shadow: 0 20px 40px 10px rgba(8,10,10,0.20);
+}
+#box .banner .left-swiper {
+	position:absolute;
+	left:0px;
+	right: auto;
+	top:30px;
+	z-index:1;
+}
+#box .banner .right-swiper {
+	position:absolute;
+	right:0px;
+	left:auto;
+	top:30px;
+	z-index:1;
+}
+#box .banner .nocurrent-swiper {
+	width:800px;
+	height:534px;
+	border-radius:8px;
+	overflow: hidden;
+}
+#box .banner .nocurrent-swiper:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.6);
+	z-index:99;
+}
+
+
+#box .banner .slide1 {
+	background:url(../img/bj.jpg) no-repeat;
+	background-size:100% 100%; 
+	
+}
+#box .banner .slide2 {
+	background:url(../img/bj2.jpg) no-repeat;
+	background-size:100% 100%; 
+}
+#box .banner .slide3 {
+	background:url(../img/bj3.jpg) no-repeat;
+	background-size:100% 100%; 
+}
+#box .banner .slide4 {
+	background:url(../img/bj.jpg) no-repeat;
+	background-size:100% 100%; 
+	
+}
+#box .banner .slide5 {
+	background:url(../img/bj2.jpg) no-repeat;
+	background-size:100% 100%; 
+}
+#box .banner .slide6 {
+	background:url(../img/bj3.jpg) no-repeat;
+	background-size:100% 100%; 
+}
+#box .banner .swiper-slide div{
+	width: 395px;
+	height: 87px;
+	background:url(../img/bianjie.png) no-repeat;
+	background-size:100% 100%; 
+	margin: 0 auto;
+	margin-top: 138px;
+	margin-bottom: 80px;
+	text-align: center;
+	line-height: 87px;
+	font-size: 38px;
+	color: #FFFFFF;
+	letter-spacing: 1.9px;
+}
+#box .banner .swiper-slide p{
+	text-align: center;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+#box .banner .swiper-slide i{
+	display: block;
+	width:900px;
+	height:600px;
+	background:rgba(0,0,0,0.4);
+	overflow: hidden;
+}
+}
+@media screen and (max-width: 800px) {
+	#box .con2 h5{
+		display: none;
+	}
+	#box .banner{
+		display: none;
+	}
+	#box #swiper-container10{
+		width: 100%;
+		height: 18.56rem;
+	}
+	#box #swiper-container10 .swiper-slide{
+		width: 15.46666rem;
+		height: 18.56rem;
+		margin-right: 0.8rem;
+	}
+	#box #swiper-container10 .swiper-slide div{
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+		overflow: hidden;
+	}
+	#box #swiper-container10 .swiper-slide h1{
+		margin-top: 8rem;
+		font-size: 0.96rem;
+		font-weight: bold;
+		margin-bottom: 0.4266rem;
+		color: #FFFFFF;
+		text-align: center;
+	}
+	#box #swiper-container10 .swiper-slide p{
+		width: 11.7333rem;
+		opacity: 0.8;
+		text-align: center;
+		font-size: 0.8533rem;
+		color: #FFFFFF;
+		letter-spacing: 1px;
+		margin: 0 auto;
+	}
+	#box #swiper-container10 .slide1 {
+		background:url(../img/bj.jpg) no-repeat;
+		background-size:100% 100%; 
+	}
+	#box #swiper-container10 .slide2 {
+		background:url(../img/bj2.jpg) no-repeat;
+		background-size:100% 100%; 
+	}
+	#box #swiper-container10 .slide3 {
+		background:url(../img/bj3.jpg) no-repeat;
+		background-size:100% 100%; 
+	}
+	#box #swiper-container10 .slide4 {
+		background:url(../img/bj.jpg) no-repeat;
+		background-size:100% 100%; 
+		
+	}
+	#box #swiper-container10 .slide5 {
+		background:url(../img/bj2.jpg) no-repeat;
+		background-size:100% 100%; 
+	}
+	#box #swiper-container10 .slide6 {
+		background:url(../img/bj3.jpg) no-repeat;
+		background-size:100% 100%; 
+	}
+}
+
+

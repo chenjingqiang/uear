@@ -277,42 +277,7 @@
         margin-top: 0.5333rem;
         margin-bottom: 2.13333rem;
     }
-    #box .con2 ul{
-        width: 100%; 
-    }
-    #box .con2 li{
-        width: 100%;
-        height: 6.46666rem;
-        position: relative;
-    }
-    #box .con2 ul li .rrr h1{
-        text-align: right
-        
-    }
-    #box .con2 ul li .rrr p{
-        float: right;
-        text-align: right;
-    }
-    #box .con2 div{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        color: #fff;
-        padding:0 1.3866rem;
-    }
-    #box .con2 ul li div h1{
-        width: 100%;
-        font-size: 0.85333rem;
-        color: #fff;
-        margin: 0;
-        margin: 0.8rem 0;
-    }
-    #box .con2 ul li div p{
-        width: 10.29333rem;;
-        font-size: 0.64rem;
-        line-height: 1.0666rem;
-        opacity: 0.8;
-    }
+    
     /* 旋转 */
     @keyframes myfirst
     {
