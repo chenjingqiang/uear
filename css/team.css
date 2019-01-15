@@ -146,36 +146,62 @@
         padding-bottom: 24px;
         border-bottom:1px solid #d8d8d8; 
     }
-    #box .con2_r ul{
-        padding-top: 24px;
+    #box .con2_r h2{
+        font-size: 20px;
+        color: #5885EE;
+        margin-top: 35px;
+        margin-bottom: 55px;
     }
-    #box .con2_r ul li{
+    #box .con2_r li{
+        width: 194px;
+        height: 240px;
         float: left;
+        text-align: center;
+        border: 1px solid #fff;
+        padding-top: 30px;
+        position: relative;
+    }
+    #box .con2_r li:hover div{
+        display: block;
+    }
+    #box .con2_r li img{
+        width: 100px;
+        height: 100px;
+    }
+    #box .con2_r li h3{
+        font-size: 14px;
+        color: #5885EE;
+        letter-spacing: 0.42px;
+        margin-top: 15px;
+        margin-bottom: 4.5px;
+        font-weight: bold;
+    } 
+    #box .con2_r li h4{
+        width: 16px;
+        height: 3px;
+        background: #5885EE;
+        margin: 0 auto;
+        margin-bottom: 5.5px;
+    }
+    #box .con2_r li h5{
+        height: 28px;
         font-size: 14px;
         color: #333333;
-        letter-spacing: 2.16px;
-        margin-bottom: 15px;
-        width: 389px;
-        height: 20px;
+        letter-spacing: 1px;
+        line-height: 28px;
     }
-    #box .con2_r ul .ffr{
-        float: right;
-        width: 221px;
-    }
-    #box .con2_r ul li img{
-        width: 20px;
-        height: 20px;
-    }
-    #container{
+    #box .con2_r li div{
         width: 100%;
-        height: 336px;
-    }
-    .amap-logo,.amap-copyright{
-        z-index: -10;
-    }
-    .amap-icon img{
-        width: 25px;
-        height: 34px;
+        position: relative;
+        z-index: 2;
+        font-size: 12px;
+        color: #666666;
+        letter-spacing: 0.86px;
+        text-align: justify;
+        line-height: 28px;
+        display: none;
+        background: #fff;
+        padding: 0 20px;
     }
     
 }
@@ -298,25 +324,8 @@
         color: #474747;
         letter-spacing: 1px;
         line-height: 1.6rem;
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 1.6rem;
     }
-    #box .m_con2 ul{
-        border-top: 1px solid #d8d8d8;
-        margin-top: 1.6rem;
-        padding-top: 1.6rem;
-        overflow: hidden;
-    }
-    #box .m_con2 ul li{
-        font-size: 0.6933rem;
-        color: #333333;
-        margin-bottom: 0.74666rem;
-        height:1.066rem;
-        line-height: 1.066rem;
-    }
-    #box .m_con2 ul li img{
-        width: 1.066rem;
-    }
-    #box .m_con2 .m_ditu{
-        width: 100%;
-        margin-top: 0.53333rem;
-    }
+    
 }

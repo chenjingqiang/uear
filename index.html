@@ -78,19 +78,19 @@
                                             <h2>
                                                 communication isn’t conversion of language
                                             </h2>
-                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            <a href="javascript:;" class="btn">立即开始使用 优译</a>
                                             
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide2">
                                         <div class="pos">
                                             <h1>
-                                                把语言的沟通还给人类2
+                                                把语言的沟通还给人类
                                             </h1>
                                             <h2>
                                                 communication isn’t conversion of language
                                             </h2>
-                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            <a href="javascript:;" class="btn">立即开始使用 优译</a>
                                             
                                         </div>
                                     </div>
@@ -102,7 +102,7 @@
                                             <h2>
                                                 communication isn’t conversion of language
                                             </h2>
-                                            <a href="#" class="btn">立即开始使用 优译</a>
+                                            <a href="javascript:;" class="btn">立即开始使用 优译</a>
                                             
                                         </div>
                                     </div>
@@ -117,6 +117,17 @@
                                 </div>
                             </div>
                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide download">
+                <div class="pos2">
+                    <h1>
+                        当您需要24小时真人在线翻译时 
+                    </h1>
+                    <h2>
+                        When you need 24-hour live online translation
+                    </h2>
+                    <a href="javascript:;" class="btn">立即开始使用 优译</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -338,7 +349,7 @@
                 </div>
             </div>
             <div class="swiper-slide zx">
-                <h3>新闻资讯</h3>
+                <h3>热点资讯</h3>
                 <h2></h2>
                 <div id="ding" class="ding">
                         01
@@ -361,7 +372,7 @@
                             <a href="opinion.html">意见反馈</a>
                         </li>
                         <li class="fl">
-                            <i>客服热线</i><span>87778777</span>
+                            <i>客服热线</i><span>+86（010）87778777 </span>
                         </li>
                         <li class="fl">
                             <i>邮箱</i><span>service@uear.net</span>
@@ -899,7 +910,7 @@
                             }
                         }
                     }else{
-                        if(this.activeIndex>0){
+                        if(this.activeIndex>0&&this.activeIndex!=1){
                             m_logo.src='img/m_logo1.png'
                             m_nav_logo.src='img/m_nav1.png'
                         }else{
@@ -967,15 +978,16 @@
         var mySwiper10 = new Swiper ('.swiper-container10', {
             direction: 'horizontal', 
             speed:200,
-            centeredSlides: true,
             slidesPerView: "auto",
+            centeredSlides: true,
+            loop:true,
         })
     </script>
     <script>
         $(document).ready(function(){
             $.ajax({
                 type: "post",
-                url: 'http://39.105.114.96/admin/ajax/notice.php',
+                url: 'http://admin.uear.net/ajax//notice.php',
                 async : true,
                 dataType:'json',
                 success: function (data)
@@ -997,7 +1009,7 @@
             });
             $.ajax({
                 type: "post",
-                url: 'http://39.105.114.96/admin/ajax/news.php',
+                url: 'http://admin.uear.net/ajax//news.php',
                 async : true,
                 dataType:'json',
                 success: function (data)

@@ -102,18 +102,18 @@
     #box .con1 .pos{
         width: 100%;
         position: absolute;
-        top: 35%;
+        top: 40%;
         left: 0;
         text-align: center;
     }
-    #box .con1 h1{
+    #box .con1 .pos h1{
         width: 100%;
         font-size: 1.28rem;
         color: #FFFFFF;
         letter-spacing: 0.7px;
         text-align: center;
     }
-    #box .con1 h2{
+    #box .con1 .pos h2{
         width: 13.0133rem;
         margin: 0 auto;
         font-size: 0.7466rem;
@@ -123,8 +123,8 @@
         margin-top: 0.5rem;
         margin-bottom: 2.1rem;
     }
-    #box .con1 .btn{
-        display: block;
+    #box .con1 .pos .btn{
+        display: none;
         margin: 0 auto;
         width: 11.2rem;
         height: 2.45333rem;
@@ -444,6 +444,44 @@
         height: 130px;
         background: #fff;
         z-index: 9;
+    }
+    #box .download{
+        background:url(../img/b22.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .download .pos2{
+        width: 100%;
+        text-align: center;
+        margin-top: 10.6666rem;
+    }
+    #box .download .pos2 h1{
+        width: 100%;
+        font-size:1.066rem;
+        color: #FFFFFF;
+        letter-spacing: 0.7px;
+        text-align: center;
+    }
+    #box .download .pos2 h2{
+        width: 13.0133rem;
+        margin: 0 auto;
+        font-size: 0.7466rem;
+        color: #FFFFFF;
+        letter-spacing: 0.41px;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    #box .download .pos2 .btn{
+        display: block;
+        margin: 0 auto;
+        width: 11.2rem;
+        height: 2.45333rem;
+        line-height: 2.45333rem;
+        font-size: 0.85333rem;
+        background: #5885EE;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 1.866666rem;
     }
 }
 @media (max-height:560px){ 

@@ -61,29 +61,29 @@
 
 
 #box .banner .slide1 {
-	background:url(../img/bj.jpg) no-repeat;
+	background:url(../img/she_h1.jpg) no-repeat;
 	background-size:100% 100%; 
 	
 }
 #box .banner .slide2 {
-	background:url(../img/bj2.jpg) no-repeat;
+	background:url(../img/she_h2.jpg) no-repeat;
 	background-size:100% 100%; 
 }
 #box .banner .slide3 {
-	background:url(../img/bj3.jpg) no-repeat;
+	background:url(../img/she_h3.jpg) no-repeat;
 	background-size:100% 100%; 
 }
 #box .banner .slide4 {
-	background:url(../img/bj.jpg) no-repeat;
+	background:url(../img/she_h4.jpg) no-repeat;
 	background-size:100% 100%; 
 	
 }
 #box .banner .slide5 {
-	background:url(../img/bj2.jpg) no-repeat;
+	background:url(../img/she_h5.jpg) no-repeat;
 	background-size:100% 100%; 
 }
 #box .banner .slide6 {
-	background:url(../img/bj3.jpg) no-repeat;
+	background:url(../img/she_h6.jpg) no-repeat;
 	background-size:100% 100%; 
 }
 #box .banner .swiper-slide div{
@@ -154,28 +154,28 @@
 		margin: 0 auto;
 	}
 	#box #swiper-container10 .slide1 {
-		background:url(../img/bj.jpg) no-repeat;
+		background:url(../img/she_h1M.jpg) no-repeat;
 		background-size:100% 100%; 
 	}
 	#box #swiper-container10 .slide2 {
-		background:url(../img/bj2.jpg) no-repeat;
+		background:url(../img/she_h2M.jpg) no-repeat;
 		background-size:100% 100%; 
 	}
 	#box #swiper-container10 .slide3 {
-		background:url(../img/bj3.jpg) no-repeat;
+		background:url(../img/she_h3M.jpg) no-repeat;
 		background-size:100% 100%; 
 	}
 	#box #swiper-container10 .slide4 {
-		background:url(../img/bj.jpg) no-repeat;
+		background:url(../img/she_h4M.jpg) no-repeat;
 		background-size:100% 100%; 
 		
 	}
 	#box #swiper-container10 .slide5 {
-		background:url(../img/bj2.jpg) no-repeat;
+		background:url(../img/she_h5M.jpg) no-repeat;
 		background-size:100% 100%; 
 	}
 	#box #swiper-container10 .slide6 {
-		background:url(../img/bj3.jpg) no-repeat;
+		background:url(../img/she_h6M.jpg) no-repeat;
 		background-size:100% 100%; 
 	}
 }

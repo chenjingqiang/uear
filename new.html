@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>新闻</title>
+    <title>热点资讯</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
@@ -94,7 +94,7 @@
                         <a href="opinion.html">意见反馈</a>
                     </li>
                     <li class="fl">
-                        <i>客服热线</i><span>87778777</span>
+                        <i>客服热线</i><span>+86（010）87778777 </span>
                     </li>
                     <li class="fl">
                         <i>邮箱</i><span>service@uear.net</span>
@@ -139,7 +139,7 @@
             var new_id=localStorage.getItem('new_id');
             $.ajax({
                 type: "post",
-                url: 'http://39.105.114.96/admin/ajax/news_info.php',
+                url: 'http://admin.uear.net/ajax//news_info.php',
                 data:{
                     'id':new_id,
                 },
@@ -157,7 +157,7 @@
                     var oli=document.createElement('li');
                     oli.className='clearfix'
                     if(pc_yd=='yd'){
-                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>2018-10-12</i></div>'
+                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>'+datas[i].datetime+'</i></div>'
                     }else{
                         oli.innerHTML=datas[i].title;
                     }
@@ -176,7 +176,7 @@
                     var oli=document.createElement('li');
                     oli.className='clearfix'
                     if(pc_yd=='yd'){
-                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>2018-10-12</i></div>'
+                        oli.innerHTML='<div class="b_j" style="background: url('+datas[i].img+') no-repeat center;background-size:cover;"></div><div class="bjc fr"><h1>'+datas[i].title+'</h1><i>'+datas[i].datetime+'</i></div>'
                     }else{
                         oli.innerHTML=datas[i].title;
                     }
@@ -191,7 +191,7 @@
             //相关文章
             $.ajax({
                 type: "post",
-                url: 'http://39.105.114.96/admin/ajax/news_correlation.php',
+                url: 'http://admin.uear.net/ajax//news_correlation.php',
                 data:{
                     'id':new_id,
                     'page':1,
@@ -234,7 +234,7 @@
                             //获取当前页数
                             $.ajax({
                                 type: "post",
-                                url: 'http://39.105.114.96/admin/ajax/news_correlation.php',
+                                url: 'http://admin.uear.net/ajax//news_correlation.php',
                                 data:{
                                     'id':new_id,
                                     'pc_yd':pc_yd,
@@ -255,7 +255,7 @@
             //热门文章
             $.ajax({
                 type: "post",
-                url: 'http://39.105.114.96/admin/ajax/news_hot.php',
+                url: 'http://admin.uear.net/ajax//news_hot.php',
                 data:{
                     'id':new_id,
                     'page':1,
@@ -298,7 +298,7 @@
                             //获取当前页数
                             $.ajax({
                                 type: "post",
-                                url: 'http://39.105.114.96/admin/ajax/news_hot.php',
+                                url: 'http://admin.uear.net/ajax//news_hot.php',
                                 data:{
                                     'id':new_id,
                                     'page':page,
@@ -322,7 +322,7 @@
             function n_p(act){
                 $.ajax({
                     type: "post",
-                    url: 'http://39.105.114.96/admin/ajax/news_beside.php',
+                    url: 'http://admin.uear.net/ajax//news_beside.php',
                     data:{
                         'id':new_id,
                         'act':act

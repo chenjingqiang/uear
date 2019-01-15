@@ -102,7 +102,11 @@
             </div>
         </div>
         <div class="con2" id="con2">
-            <img src="img/translate_con.png" alt="" class="lc">
+            <div class="con2_1">
+                <img src="img/m_translate_con.jpg" alt="" srcset="">
+            </div>
+            <a href="javascript:;" id="a1">立即成为翻译官</a>
+            <a href="javascript:;" id="a2">立即成为翻译官</a>
         </div>
         
         <div class="swiper-slide_footer">
@@ -112,7 +116,7 @@
                         <a href="opinion.html">意见反馈</a>
                     </li>
                     <li class="fl">
-                        <i>客服热线</i><span>87778777</span>
+                        <i>客服热线</i><span>+86（010）87778777 </span>
                     </li>
                     <li class="fl">
                         <i>邮箱</i><span>service@uear.net</span>
@@ -148,17 +152,28 @@
         var m_nav=document.getElementById('m_nav');
         var m_nav2=document.getElementById('m_nav2');
         var ce_nav=document.getElementById('ce_nav');
-        var con2=document.getElementById('con2');
-        var con2_img=con2.getElementsByTagName('img')[0];
-        if(document.documentElement.clientWidth<800){
-            con2_img.src='img/m_translate_con.png';
-        };
+        
         m_nav.onclick=function(){
             ce_nav.className='ce_nav ce_nav_dong';
         };
         m_nav2.onclick=function(){
             ce_nav.className='ce_nav ce_nav_dong2';
         };
+        if(document.documentElement.clientWidth<800){
+            var a1=document.getElementById('a1');
+            var a2=document.getElementById('a2');
+            document.onscroll=function(){
+               var a1_t=a1.offsetTop + document.documentElement.scrollTop;
+               var a2_t=a2.offsetTop
+              if(a1_t>a2_t){
+                a1.style.opacity=0;
+                a2.style.opacity=1;
+              }else{
+                a1.style.opacity=1;
+                a2.style.opacity=0;
+              };
+            }
+        }
     </script>
     <script>
         $(document).ready(function(){
@@ -203,7 +218,7 @@
                 var cellphone=$('#phone').val();
                 $.ajax({
                     type: "post",
-                    url: 'http://39.105.114.96/admin/ajax/select_result.php',
+                    url: 'http://admin.uear.net/ajax//select_result.php',
                     data:{
                         'cellphone':cellphone
                     },
