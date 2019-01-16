@@ -41,12 +41,51 @@
                     </li> 
                     <li class="clearfix">
                         <label id="shangchuan2" class="fl" for="shangchuan">上传简历</label>
-                        <input type="file" id="shangchuan"  accept="image/jpeg," />
+                        <input type="file" id="shangchuan" />
                         <p class="fl" id="wen_n"></p>
                     </li>
                 </ul>
                <a href="javascript:;" id="sub2">提交</a>
                 <img src="img/close.png" alt="" id="close">
+            </div>
+        </div>
+        <div id="zhezhao_m">
+            <h2>职位详情</h2>
+            <h3 id="zhiwei"></h3>
+            <img src="img/off2.png" alt="" id="off2">
+            <div id="content2">
+
+            </div>
+            <div id="zhe_zi_m">
+                <h1>基本信息填写</h1>
+                <ul>
+                    <li class="clearfix">
+                        <label> <i>*</i> 姓名</label>
+                        <input type="text" id="Nam_m" placeholder="请填写您的姓名">
+                    </li>
+                    <li class="clearfix">
+                        <label> <i>*</i> 邮箱</label>
+                        <input type="text" id="email_m" placeholder="请填写您的邮箱">
+                    </li>
+                    <li class="clearfix">
+                        <label> <i>*</i> 电话</label>
+                        <input type="text" id="phone_m" placeholder="请填写您的电话">
+                    </li> 
+                    <li class="clearfix">
+                        <label> <i>*</i> 职业类型</label>
+                        <input type="text" disabled="disabled" id="zhiye_m">
+                    </li>
+                    <li class="clearfix">
+                        <label> <i>*</i> 投递岗位</label>
+                        <input type="text" disabled="disabled" id="gang_m">
+                    </li> 
+                    <li class="clearfix">
+                        <label id="shangchuan2_m" class="fl" for="shangchuan">上传简历</label>
+                        <input type="file" id="shangchuan_m" />
+                        <h6 class="fl" id="wen_n_m"></h6>
+                    </li>
+                </ul>
+               <a href="javascript:;" id="sub2_m">提交</a>
             </div>
         </div>
         <header>
@@ -75,7 +114,6 @@
             <a href="product.html">产品</a>
             <a href="about.html">关于</a>
         </div>
-
         <div class="m_con">
             <header class="header2">
                 <a href="index.html" class="logo fl">
@@ -92,7 +130,7 @@
         </div>
 
         <div class="con">
-            <img src="img/translate.png" alt="">
+            <img src="img/about.jpg" alt="">
             <div>
                 <h1>关于我们</h1>
                 <p>About us</p>
@@ -147,17 +185,17 @@
         <div class="m_con2">
             <h1 class="clearfix">
                 <a href="about.html">公司介绍</a>
-                <a href="team.html" class="act">团队介绍</a>
+                <a href="team.html">团队介绍</a>
+                <a href="join.html" class="act">加入我们</a>
             </h1>
             <div>
-                <h2>
-                    团队介绍
-                </h2>
-                <p>
-                    瑞迪优是一家致力于以语言为传播手段，以文化为交流内容的创意型公司。公司拥有一支由高学历、高素质人才组成的互联网科技创业团队，其国内制作团队不仅在技术上处于行业前端，更注重产品表达与客户体验度，本着“把语言还给人类”的美好愿景，以语言文化沟通交流为目的，致力于打造一款有尺度、有温度、有态度的真人实时在线口译翻译软件——优译Uear；公司海外运营团队是由海外留学生、华裔等高素质人才组成，均具有丰富的海外生活经验与扎实的语言基础，具备良好的社会责任感，致力于为用户提供高效、便捷、准确的个性化翻译环境。
-                    我们的理念是 “理解、沟通、善行、助人” ，我们坚信，方便人与人之间的沟通，也是一种智慧。
-                </p>
-                
+                <ul id="fu_type" class="clearfix">
+                </ul>
+                <img src="img/on.png" alt="" id="on_off">
+                <img src="img/m_kong.jpg" alt="" id="m_kong">
+                <ul id="zi_type">
+                    
+                </ul>
             </div>
             
         </div>
@@ -177,7 +215,7 @@
                         客户端下载<img src="img/52.png" alt="" srcset="">
                     </li>
                 </ul>
-                <p>京 ICP 备15053449 号 京公网安备 11010502032956 号 | 京 ICP 备15053449 号 京公网安备 11010502032956 号 </p>
+                <p>京ICP备19001237号</p>
             </footer>
         </div>
         <div class="footer">
@@ -191,8 +229,7 @@
             <h1 class="yx">
                 邮箱 service@uear.net
             </h1>
-            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
-            <p>京 ICP 备15053449 号 京公网安备 11010502032956 号</p>
+            <p>京ICP备19001237号</p>
         </div>
        <img src="img/back.png" alt="" srcset="" id="back">
         
@@ -200,7 +237,7 @@
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/back.js"></script>
-    
+    <!-- 移动导航动画 -->
     <script>
         var m_nav=document.getElementById('m_nav');
         var m_nav2=document.getElementById('m_nav2');
@@ -212,6 +249,7 @@
             ce_nav.className='ce_nav ce_nav_dong2';
         };
     </script>
+    <!-- PC初始 -->
     <script>
         var type=localStorage.getItem('type')||'技术类';
         var con2=document.getElementById('con2')
@@ -228,6 +266,7 @@
         var ps_li=ps.getElementsByTagName('li');
         var kong=document.getElementById('kong');
         var shangchuan=document.getElementById('shangchuan');
+        var shangchuan_m=document.getElementById('shangchuan_m');
         var gangwei ='';
         var info='';
         var t_f=false;
@@ -245,7 +284,6 @@
         //         join_img.src='img/hui.png';
         //     }
         // };
-        
         function li_xun(){
             switch(type)
             {
@@ -393,29 +431,56 @@
         join_ul.onmouseout=function(){
             li_xun()
         };
-        // 获取子类型
    </script>
     <!-- 交互 -->
-    <script>
-        zi(type)
-        //获取职位名称
-        function position(position){
+    <script> 
+        //获取类别
+        fu()
+        function fu(){
             $.ajax({
                 type: "post",
-                url: 'http://admin.uear.net/ajax/joinus_intro.php',
-                data:{
-                    'position':position
-                },
+                url: 'http://admin.uear.net/ajax/joinus_orderby.php',
                 async : true,
                 dataType:'json',
                 success: function (data)
                 {
-                    content.innerHTML=data;
-                }
-            })
-        }
-        
-         //获取子类型
+                    if(data.length>4){
+                        $('#on_off').click(function(){
+                            if($('#fu_type').hasClass('on_off_dong')){
+                                $('#fu_type').removeClass('on_off_dong')
+                                $('#fu_type').addClass('on_off_dong2')
+                            }else{
+                                $('#fu_type').removeClass('on_off_dong2')
+                                $('#fu_type').addClass('on_off_dong')
+                            };
+                        });
+                    };
+                    zi_m(data[0])
+                    $('#zhiye_m').val(data[0])
+                    for(var i=0;i<data.length;i++){
+                        var oLi=document.createElement('li');
+                        oLi.innerHTML=data[i];
+                        $('#fu_type').append(oLi)
+                    };
+                   var fu_type=document.getElementById('fu_type');
+                   var aLi=fu_type.getElementsByTagName('li')
+                   for(var i=0;i<aLi.length;i++){
+                        aLi[0].className='act2';
+                        aLi[i].onclick=function(){
+                            zi_m(this.innerHTML);
+                            $('#zhiye_m').val(this.innerHTML);
+                            for(var j=0;j<aLi.length;j++){
+                                aLi[j].className='';
+                            }
+                            this.className='act2';
+                        };
+                   }
+                   
+                },
+            });
+        };
+        zi(type)
+        //获取子类型PC
         function zi(types){
             $.ajax({
                 type: "post",
@@ -458,6 +523,76 @@
                 },
             });
         };
+        //获取子类型移动
+        function zi_m(types){
+            $.ajax({
+                type: "post",
+                url: 'http://admin.uear.net/ajax/joinus_position_m.php',
+                data:{
+                    'name':types
+                },
+                async : true,
+                dataType:'json',
+                success: function (data)
+                {
+                    if(data=='无数据'){
+                        $('#m_kong').css('display','block');
+                        $('#zi_type').css('display','none');
+                        return;
+                    }else{
+                        $('#m_kong').css('display','none');
+                        $('#zi_type').css('display','block');
+                        $('#zi_type').html('')
+                        for(var i=0;i<data.length;i++){
+                            var oLi=document.createElement('li');
+                            oLi.innerHTML='<h3>'+data[i].name+'</h3><p>'+data[i].time+'</p><i>立即申请</i>';
+                            var a_i=oLi.getElementsByTagName('i')[0];
+                            a_i.name_id=data[i].name;
+                            a_i.onclick=function(){
+                                position_m(this.name_id)
+                                $('#gang_m').val(this.name_id);
+                                $('#zhiwei').html(this.name_id)
+                                $('#zhezhao_m').css('display','block')
+                            }
+                            $('#zi_type').append(oLi)
+                        }
+                    }
+                    
+                },
+            });
+        }
+        //获取简介PC
+        function position(position){
+            $.ajax({
+                type: "post",
+                url: 'http://admin.uear.net/ajax/joinus_intro.php',
+                data:{
+                    'position':position
+                },
+                async : true,
+                dataType:'json',
+                success: function (data)
+                {
+                    content.innerHTML=data;
+                }
+            })
+        }
+        //获取简介移动
+        function position_m(position){
+            $.ajax({
+                type: "post",
+                url: 'http://admin.uear.net/ajax/joinus_intro.php',
+                data:{
+                    'position':position
+                },
+                async : true,
+                dataType:'json',
+                success: function (data)
+                {
+                   $('#content2').html(data)
+                }
+            })
+        }
         //上传文件
         function up(name,email,phone,type,position,info){
             var data={
@@ -478,12 +613,17 @@
                 {
                     if(data.code==1){
                         alert('上传成功');
+                        return;
+                    };
+                    if(data.code==0){
+                        alert('请勿重复投递');
                     };
                 },
             });
         }
         
     </script>
+    <!-- 提交 -->
     <script>
         //上传表单
         var reader = new FileReader();
@@ -514,9 +654,31 @@
             }
              reader.readAsDataURL(file);  
             reader.onload = function(e) {
-                console.log(e)
                 info= e.target.result; 
-                console.log(info)
+            };
+                 　
+        })
+        $('#shangchuan_m').change(function(){
+            var str=$('#shangchuan_m').val()
+            var arr=str.split('\\');//注split可以用字符或字符串分割
+            var my=arr[arr.length-1];//这就是要取得的图片名称
+            $('#wen_n_m').html(my)
+            $('#shangchuan2_m').html('重新上传')
+            if(!$('#shangchuan_m').val()) {
+                $('#shangchuan2_m').html('上传简历')
+                return;
+            };
+            // 获取File引用:
+            var file = shangchuan_m.files[0];
+            //判断文件大小
+            var size = file.size;
+            if(size >= 1*10240*10240){
+                alert('文件大于10M不行!');
+                return false;
+            }
+            reader.readAsDataURL(file);  
+            reader.onload = function(e) {
+                info= e.target.result; 
             };
                  　
         })
@@ -545,8 +707,42 @@
             up($('#Nam').val(),$('#email').val(),$('#phone').val(),type,gangwei,info)
             
         })
+        $('#sub2_m').click(function(){
+            if($('#Nam_m').val()==''){
+                alert('请填写姓名');
+                return;
+            };
+            if($('#email_m').val()==''){
+                alert('请填写邮箱');
+                return;
+            };
+            if($('#phone_m').val()==''){
+                alert('请填写电话');
+                return;
+            };
+            var ret = /^1[34578]\d{9}$/;
+            if(!ret.test($('#phone_m').val())){
+                alert('请填写正确手机号');
+                return;
+            };
+            if($('#shangchuan_m').val()=='') {
+                alert('请上传简历')
+                return;
+            };
+            var type_m=$('#zhiye_m').val();
+            gangwei=$('#gang_m').val();
+            up($('#Nam_m').val(),$('#email_m').val(),$('#phone_m').val(),type_m,gangwei,info)
+            
+        })
         
       
+    </script>
+    <!-- 移动 -->
+    <script>
+        $('#off2').click(function(){
+            $('#zhezhao_m').css('display','none')
+        })
+       
     </script>
 </body>
 </html>
