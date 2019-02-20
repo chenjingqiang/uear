@@ -3,17 +3,17 @@
         display: none;
     }
     #box .swiper-slide_footer{
-        height:180px;
+        height:236px;
         background:rgba(18,31,51,1);
     }
     #box footer{
         width: 1200px;
-        height: 180px;
+        height: 236px;
         margin: 0 auto;
     }
     #box footer ul{
-        padding: 40px 0;
-        border-bottom: 1px solid #5B6C86;
+       overflow: hidden;
+       padding-top: 53px;
     }
     #box footer li{
         height: 52px;
@@ -48,7 +48,25 @@
         color: #5A6A86;
         height: 26px;
         line-height: 26px;
-        margin-top: 11px;
+        text-align: center;
+    }
+    #box footer .bian{
+        display: block;
+        width: 1200px;
+        border-bottom: 1px solid #5B6C86;
+        margin-bottom: 14px;
+        margin-top: 22px;
+    }
+    #box footer h6{
+        color: #CFD2D6;
+        text-align: center;
+        margin-top: 15px;
+    }
+    #box footer h6 a{
+        color: #CFD2D6;
+    }
+    #box footer em{
+        margin: 0 14.5px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -57,27 +75,27 @@
     }
     #box .footer{
         width: 100%;
-        padding-bottom: 2.13333rem;
+        padding-bottom: 1.6rem;
+        text-align: center;
     }
     #box .footer h1{
-        text-align:  center;
-        height: 1.38666rem;
-        line-height: 1.38666rem;
+        margin-bottom:1.28rem;
     }
-    #box .footer .yx{
-        margin-bottom: 0.8rem;
-    }
-    #box .footer a,#box .footer i{
-        font-size: 0.64rem;
+    #box .footer a{
+        font-size: 0.6933rem;
+        color: #666666;
+        text-align: center;
     }
     #box .footer span{
-        margin:0 0.64rem;
+        margin:0 0.48rem;
     }
     #box .footer p{
         width: 100%;
+        font-size: 0.64rem;
+        margin-bottom: 0.5333rem;
+        color: #999999;
+        letter-spacing: 0.6px;
         text-align: center;
-        height: 1.38666rem;
-        line-height: 1.38666rem;
     }
     
 }

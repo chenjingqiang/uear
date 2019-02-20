@@ -57,10 +57,18 @@
                 <div class="con1_l fl">
                     <div  id="con1_l">
                     </div>  
+                    <div class="fenxiang clearfix">
+                        <i class="fl">分享到</i>
+                        <a href="javascript:;" class="weixin" id="weixin"></a>
+                        <a href="" class="QQ" id="QQ" target="_blank"></a>
+                        <a href="" class="weibo" id="weibo"></a>
+                    </div>
+                    <div id="qrcode"></div>
                     <div class="u_d">
                         <a href="javascript:;" id="prev"><img src="img/up.png" alt="">上一篇</a>
                         <a href="javascript:;" id="next">下一篇<img src="img/down.png" alt=""></a>
                     </div>
+                    
                 </div>
                 <div class="m_con1_r clearfix" id="qh">
                     <a href="javascript:;" class="b">相关文章</a>
@@ -99,26 +107,46 @@
                     <li class="fl">
                         <i>邮箱</i><span>service@uear.net</span>
                     </li>
-                    <li class="fr">
-                        客户端下载<img src="img/52.png" alt="" srcset="">
-                    </li>
+                    <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app">
+                        <li class="fr">
+                            客户端下载
+                        </li>
+                    </a>
                 </ul>
-                <p>京ICP备19001237号</p>
+                <h6>
+                    <a href="about.html">公司介绍</a>
+                    <em>|</em>
+                    <a href="team.html">团队介绍</a>
+                    <em>|</em>
+                    <a href="join.html">加入我们</a>
+                    <em>|</em>
+                    <a href="product.html">产品介绍</a>
+                    <em>|</em>
+                    <a href="translate.html">成为翻译官</a>
+                </h6>
+                <i class="bian"></i>
+                <p>京ICP备19001237号-1</p>
+                <p>地址：北京市朝阳区建国门外大街赛特大厦1705</p>
             </footer>
         </div>
         <div class="footer">
             <h1>
+                <a href="about.html">公司介绍</a>
+                <span>|</span>
+                <a href="team.html">团队介绍</a>
+                <span>|</span>
+                <a href="join.html">加入我们</a>
+                <span>|</span>
                 <a href="opinion.html">意见反馈</a>
                 <span>|</span>
-                <a href="">客户端下载</a>
-                <span>|</span>
-                <i>客服热线87778777</i>
+                <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app">客户端</a>
             </h1>
-            <h1 class="yx">
-                邮箱 service@uear.net
-            </h1>
-            <p>京ICP备19001237号</p>
-            <p>京ICP备19001237号</p>
+            <p>
+                客服热线 &nbsp;+86（010）87778777 &nbsp; 邮箱 service@uear.net
+            </p>
+            <p>京ICP备19001237号-1 &nbsp; 京公安19001237号-1</p>
+            <p>地址：北京市朝阳区建国门外大街赛特大厦1705</p>
+            
         </div>
         <img src="img/back.png" alt="" srcset="" id="back">
         
@@ -126,6 +154,7 @@
     <script src="js/back.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/myPagination.js"></script>
+    <script src="js/qrcode.js"></script>
     <script>
         if(document.documentElement.clientWidth<800){
             var pc_yd='yd';
@@ -139,15 +168,29 @@
             var new_id=localStorage.getItem('new_id');
             $.ajax({
                 type: "post",
-                url: 'http://admin.uear.net/ajax//news_info.php',
+                url: 'http://admin.uear.net/ajax/news_info.php',
                 data:{
                     'id':new_id,
                 },
                 async : true,
-                dataType:'html',
+                dataType:'json',
                 success: function (data)
                 {
-                    $("#con1_l").html(data);
+                    $("#con1_l").html(data.content);
+                    var locat=window.location.href;
+                    var W=$('#qrcode').width();
+                    var qrcode = new QRCode(document.getElementById("qrcode"), {
+                        width : W,
+                        height : W
+                    });
+                    qrcode.makeCode(locat);
+                    //链接
+                    var con1_l=document.getElementById('con1_l');
+                    var con1_h3=con1_l.getElementsByTagName('h3')[0];
+                    var HREF='http://v.t.sina.com.cn/share/share.php?url='+locat+'&title='+data.title;
+                    var HREF2='http://connect.qq.com/widget/shareqq/index.html?title='+data.title+'&url='+locat+'&desc='+data.title
+                    $('#weibo').attr("href",HREF); 
+                    $('#QQ').attr("href",HREF2); 
                 },
             });
             function creat(datas){
@@ -378,6 +421,30 @@
         m_nav2.onclick=function(){
             ce_nav.className='ce_nav ce_nav_dong2';
         };
+    </script>
+    <!-- 分享 -->
+    <script>
+       //二维码
+       if(pc_yd=='pc'){
+            $('#weixin').mouseover(function(){
+                $('#qrcode').css('display','block');
+            });
+            $('#weixin').mouseout(function(){
+                $('#qrcode').css('display','none');
+            });
+       }else{
+            var t_f_ma=true;
+            $('#weixin').click(function(){
+                if(t_f_ma){
+                    $('#qrcode').css('display','block');
+                    t_f_ma=false;
+                }else{
+                    $('#qrcode').css('display','none');
+                    t_f_ma=true;
+                };
+            });
+        }
+       
     </script>
 </body>
 </html>

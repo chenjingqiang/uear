@@ -91,6 +91,7 @@
         width: 938px;
         padding: 34px 80px;
         padding-bottom: 100px;
+        position: relative;
     }
     #box .con .u_d{
         width: 100%;
@@ -158,6 +159,53 @@
         background: #fff;
         margin-bottom: 20px;
     }
+    #box .fenxiang{
+        margin-top: 120px;
+    }
+    #box .fenxiang i{
+        margin-right: 16px;
+        line-height: 30px;
+        font-size: 14px;
+        color: rgba(0,0,0,0.80);
+    }
+    #box .fenxiang a{
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+    }
+    #box .weixin{
+       background: url(../img/weixin1.png) no-repeat center;
+       background-size: 100% 100%;
+    }
+    #box .weixin:hover{
+        background: url(../img/weixin2.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .weibo{
+        background: url(../img/weibo1.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+     #box .weibo:hover{
+        background: url(../img/weibo2.png) no-repeat center;
+        background-size: 100% 100%;
+     }
+     #box .QQ{
+        background: url(../img/qq1.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .QQ:hover{
+        background: url(../img/qq2.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #qrcode{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        left: 90px;
+        bottom: 140px;
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
     #box{
@@ -195,6 +243,7 @@
         width: 8.64rem;
         height: 100%;
         background: rgba(88,133,238,0.90);
+        z-index: 20;
     }
     #box .ce_nav_dong{
         animation:ce_nav_sta 0.5s linear forwards;
@@ -230,6 +279,8 @@
         width: 100%;
         float: none;
         text-align: center;
+        position: relative;
+        border: 1px solid #fff;
     }
     #box  .con1_r{
         width: 100%;
@@ -370,5 +421,54 @@
     #box #xg,#box #hot{
         height: 16.37333rem;
         margin-bottom: 1.6rem;
+    }
+    #box .fenxiang{
+        width: 18.4rem;
+        margin: 0 auto;
+        margin-top: 3.73333rem;
+    }
+    #box .fenxiang i{
+        margin-right: 0.85333rem;
+        line-height: 1.6rem;
+        font-size: 0.74666rem;
+        color: rgba(0,0,0,0.80);
+    }
+    #box .fenxiang a{
+        float: left;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-right: 0.64rem;
+    }
+    #box .weixin{
+       background: url(../img/weixin1.png) no-repeat center;
+       background-size: 100% 100%;
+    }
+    #box .weixin:hover{
+        background: url(../img/weixin2.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .weibo{
+        background: url(../img/weibo1.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+     #box .weibo:hover{
+        background: url(../img/weibo2.png) no-repeat center;
+        background-size: 100% 100%;
+     }
+     #box .QQ{
+        background: url(../img/qq1.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .QQ:hover{
+        background: url(../img/qq2.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #qrcode{
+        width: 6.4rem;
+        height: 6.4rem;
+        position: absolute;
+        left:1.066rem;
+        bottom: 8.8533rem;
+        display: none;
     }
 }

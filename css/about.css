@@ -223,6 +223,7 @@
         width: 8.64rem;
         height: 100%;
         background: rgba(88,133,238,0.90);
+        z-index: 20;
     }
     #box .ce_nav_dong{
         animation:ce_nav_sta 0.5s linear forwards;

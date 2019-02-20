@@ -9,6 +9,9 @@
     #box .m_con{
         display: none;
     }
+    #box .m_xcx{
+        display: none;
+    }
     #box .m_con1_r {
         display: none;
     }
@@ -60,6 +63,66 @@
         top: 30%;
         left: 0;
         text-align: center;
+    }
+    @keyframes xcx_start
+    {
+        0% {right: 6px;}
+        100% {right: -200px;}
+    }
+    @keyframes xcx_end
+    {
+        0% {right: -206px;}
+        100% {right: 6px;}
+    }
+    #box .xcx{
+        width: 236px;
+        height: 206px;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        right: 6px;
+        z-index: 100;
+    }
+    #box .xcx .sq{
+        width: 30px;
+        height: 120px;
+        background: rgba(125,155,232,0.80);
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.06px;
+        text-align: center;
+        padding-top: 32px;
+        margin-top:40px;
+    }
+    #box .xcx_dong{
+        animation:xcx_start 0.5s forwards ;
+    }
+    #box .xcx_dong2{
+        animation:xcx_end 0.5s forwards ;
+    }
+    #box .xcx .xcx_con{
+        width: 206px;
+        height: 206px;
+        background: rgba(170,193,253,0.70);
+    }
+    #box .xcx .xcx_con p{
+        font-size: 12px;
+        color: #233B6F;
+        letter-spacing: 0.05px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    #box .xcx .xcx_con .xcx_img{
+        width: 135px;
+        height: 135px;
+        border: 1px solid #E4ECFF;
+        margin: 0 auto;
+    }
+    #box .xcx .xcx_con .xcx_img img{
+        display: block;
+        margin: 0 auto;
+        padding-top: 6px;
     }
     #box .con1 h1{
         width: 100%;
