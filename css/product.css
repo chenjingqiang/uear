@@ -3,6 +3,9 @@
         min-width: 1500px;
         position: relative;
     }
+    #box .con6, #box .con7{
+        display: none;
+    }
     #box .ce_nav{
         display: none;
     }
@@ -27,7 +30,7 @@
         left: 50%;
         margin-left: -600px;
         color: #fff;
-        top:8%;
+        top:11%;
         text-align: center;
     }
     #box .con h1{
@@ -78,6 +81,9 @@
     #box .con2 ul .rig p{
         margin-left: 10%;
     }
+
+
+
     #box .con3{
         width: 100%;
         position: relative;
@@ -93,12 +99,93 @@
         top: 48%;
         text-align: center;
     }
+    #box .con4{
+        width: 100%;
+        padding-top: 86px;
+        background:url(../img/pr_bj.png) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .con4 h1{
+        font-size: 34px;
+        color: #000000;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 106px;
+    }
+    #box .con4 .img_fu{
+        display: flex;
+        justify-content: center;
+    }
+    #box .con4 img{
+        width: 286px;
+        height: 380px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    #box .con5{
+        width: 100%;
+        padding-top: 115px;
+        padding-bottom: 145px;
+        background:url(../img/pr_bj2.png) no-repeat center;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #box .con5 h1{
+        font-size: 34px;
+        height: 369px;
+        line-height:369px;
+        color: #000000;
+        font-weight: bold;
+    }
+    #box .con5 img{
+        width: 688px;
+        height: 369px;
+        margin-left: 336px;
+    }
+    
+
 }
 @media screen and (max-width: 800px) {
     #box{
         width: 100%;
         overflow: hidden;
     }
+    #box .con5, #box .con4{
+        display: none;
+    }
+    #box .con6{
+        padding-top: 3.04rem;
+        text-align: center;
+        background:url(../img/con6_bj2.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .con6 h1{
+        font-size: 1.28rem;
+        color: #111111;
+        margin-bottom: 2.56rem;
+    }
+    #box .con6 img{
+       width: 13.12rem;
+       height: auto;
+    }
+    #box .con7{
+        padding-top: 3.04rem;
+        text-align: center;
+        background:url(../img/con7_bj2.jpg) no-repeat center;
+        background-size: 100% 100%;
+    }
+    #box .con7 h1{
+        font-size: 1.28rem;
+        color: #111111;
+        margin-bottom: 3.466rem;
+    }
+    #box .con7 img{
+       width: 18.4rem;
+       height: auto;
+       margin-bottom: 6.24rem;
+    }
+    
     #box #back{
         width: 0px;
         height: 0px;

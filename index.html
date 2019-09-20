@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="Keywords" content="翻译，立等翻译官、立等翻译官小程序、优译、优译uear、uear、一句求译、一句求译小程序、在线翻译" />
     <meta name="Description" content="翻译，立等翻译官、立等翻译官小程序、优译、优译uear、uear、一句求译、一句求译小程序、在线翻译" /> 
-	<title>我的网站</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
@@ -27,7 +26,7 @@
                 <a href="index.html" class="fl logo"></a>
                 <ul class="fr">
                     <li>
-                        <a href="translate.html">成为翻译官</a>
+                        <a href="translate.html">成为签约用户</a>
                     </li>
                     <li>
                         <a href="product.html">产品</a>
@@ -45,7 +44,7 @@
             <img src="img/x.png" alt="" srcset="" id="m_nav2">
         </div>
         <a href="index.html">首页</a>
-        <a href="translate.html">成为翻译官</a>
+        <a href="translate.html">成为签约用户</a>
         <a href="product.html">产品</a>
         <a href="about.html">关于</a>
     </div>
@@ -59,7 +58,7 @@
             </div>
         </header>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container" id="ce_close">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="xcx clearfix" id="xcx">
@@ -98,7 +97,7 @@
                                                 Communication is a human’s thing
 
                                             </h2>
-                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即开始使用 优译</a>
+                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即使用 优译-立等翻译官</a>
                                             
                                         </div>
                                     </div>
@@ -111,7 +110,7 @@
                                                 Communication is a human’s thing
 
                                             </h2>
-                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即开始使用 优译</a>
+                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即使用 优译-立等翻译官</a>
                                             
                                         </div>
                                     </div>
@@ -124,7 +123,7 @@
                                                 Communication is a human’s thing
 
                                             </h2>
-                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即开始使用 优译</a>
+                                            <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即使用 优译-立等翻译官</a>
                                             
                                         </div>
                                     </div>
@@ -150,7 +149,7 @@
                     <h2>
                         When you need 24-hour live online translation
                     </h2>
-                    <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即开始使用 优译</a>
+                    <a href="https://sj.qq.com/myapp/detail.htm?apkName=com.uear.app" class="btn">立即使用 优译-立等翻译官</a>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -415,7 +414,7 @@
                         <em>|</em>
                         <a href="product.html">产品介绍</a>
                         <em>|</em>
-                        <a href="translate.html">成为翻译官</a>
+                        <a href="translate.html">成为签约用户</a>
                     </h6>
                     <i class="bian"></i>
                     <p>京ICP备19001237号-1</p>
@@ -475,6 +474,7 @@
     </script>
     <script>
         var m_nav=document.getElementById('m_nav');
+        var ce_close=document.getElementById('ce_close');
         var m_nav2=document.getElementById('m_nav2');
         var ce_nav=document.getElementById('ce_nav');
         var sq=document.getElementById('sq');
@@ -486,6 +486,11 @@
         m_nav2.onclick=function(){
             ce_nav.className='ce_nav ce_nav_dong2';
         };
+        ce_close.onclick=function(){
+            if(ce_nav.className=='ce_nav ce_nav_dong'){
+                ce_nav.className='ce_nav ce_nav_dong2';
+            }
+        }
         sq.onclick=function(){
             if(xcx_t_f){
                 xcx.className='xcx clearfix xcx_dong';
@@ -496,6 +501,8 @@
             }
            
         }
+        
+        
       
     </script>
     <!-- 动画 -->

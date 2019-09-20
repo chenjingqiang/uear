@@ -13,7 +13,7 @@
         margin-left: 0.8rem;
     }
     #box .header2 .logo img{
-        width: 4.0533rem;
+        width: 9.44rem;
     }
     #box .header2 div{
         line-height: 2.56rem;
@@ -22,14 +22,12 @@
     #box .header2 div img{
         width: 1.226rem;
     }
-    
-    
-    
+     
 }
 @media screen and (min-width: 800px) {
     #box header .logo{
-        width: 113px;
-        height: 24px;
+        width: 259px;
+        height: 23px;
         margin-top: 23px;
         background: url(../img/youyi1.png) center no-repeat;
         background-size: 100% 100%;
@@ -37,11 +35,11 @@
     @keyframes header_sta
     {
         0% {background-color:rgba(0,0,0,0.3);}
-        100% {background:none;}
+        100% {background:#fff;}
     }
     @keyframes header_end
     {
-        0% {background:none;}
+        0% {background:#fff;}
         100% {background-color:rgba(0,0,0,0.3);}
     }
     @keyframes header_sta2
@@ -97,7 +95,12 @@
         line-height: 80px;
         font-weight: bold;
     }
-    
+    #box header li a:hover{
+        font-size: 15px;
+        color: #638CEF;
+        line-height: 80px;
+        font-weight: bold;
+    }
     #box .act a{
         color: #638CEF;
     }
